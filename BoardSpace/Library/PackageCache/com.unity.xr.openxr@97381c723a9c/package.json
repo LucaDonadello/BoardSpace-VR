@@ -1,0 +1,59 @@
+{
+  "name": "com.unity.xr.openxr",
+  "displayName": "OpenXR Plugin",
+  "version": "1.14.0",
+  "unity": "2021.3",
+  "description": "OpenXR is an open, royalty-free standard developed by Khronos that aims to simplify AR/VR development by allowing developers to target a wide range of AR/VR devices. Use this plug-in to enable OpenXR in XR Plug-in Management.",
+  "keywords": [
+    "openxr",
+    "xr",
+    "reality",
+    "xreditorsubsystem"
+  ],
+  "dependencies": {
+    "com.unity.xr.management": "4.4.0",
+    "com.unity.xr.legacyinputhelpers": "2.1.2",
+    "com.unity.inputsystem": "1.6.3",
+    "com.unity.xr.core-utils": "2.3.0"
+  },
+  "samples": [
+    {
+      "displayName": "Controller",
+      "description": "Basic sample showing how to create and reference OpenXR action maps with the new input system.",
+      "path": "Samples~/Controller"
+    },
+    {
+      "displayName": "Controller XRInput",
+      "description": "Basic sample showing how to query OpenXR input with the XR Input APIs.",
+      "path": "Samples~/ControllerXRInput"
+    },
+    {
+      "displayName": "Meshing Subsystem Feature",
+      "description": "Shows a teapot mesh generated from native mesh subsystem with physics baked in background.",
+      "path": "Samples~/MeshingFeature"
+    },
+    {
+      "displayName": "Intercept Feature",
+      "description": "Demonstrates how to intercept an OpenXR method.",
+      "path": "Samples~/InterceptFeature"
+    },
+    {
+      "displayName": "Custom Composition Layer Feature",
+      "description": "Demonstrates how to add support for a custom composition layer type.",
+      "path": "Samples~/CustomCompositionLayerFeature"
+    }
+  ],
+  "_upm": {
+    "changelog": "### Added\n\n* Added support for the RG16f texture format and a selection mode for the texture format of the Space Warp motion vector texture for the Meta Quest feature. You can select the format for the Space Warp motion vector texture in Editor > Project Settings > XR Plug-in Management > OpenXR > Android tab > Meta Quest Support feature settings.\n* Added the following extension methods for `XrResult`: `IsSuccess()`, `IsUnqualifiedSuccess()`, and `IsError()`, which you can use to more conveniently reason about `XrResult` values.\n* Added new values to the `XrResult` enum to match the values present in the native `XrResult` type in OpenXR 1.1.36.\n* Added support for locating the OpenXR loader for the Meta XR Simulator on OSX.\n* Added new Optimize Multiview Render Regions settings option for Meta Quest devices. In the context of XR rendering, Multiview Render Regions enables the drivers to skip shader invocations (and rendering work) for screen areas outside of the user's view (such as the nasal regions that the user can't see within the headset). You can toggle on support for Multiview Render Regions in Editor > Project Settings > XR Plug-in Management > OpenXR > Android tab > Meta Quest Support feature settings. Note that Multiview Render Regions requires Symmetric Projection settings toggle turned on, and Render Mode set to Single Pass Instanced \\ Multi-view. Multiview Render Regions is only supported in the Vulkan Graphics API, and it is activated at application start up.\n* Added project validation warning to prevent user from using URP upscaling with XR.\n\n### Deprecated\n\n* Deprecated `XrResult.TimeoutExpored` and `XrResult.AndroidThreadSettingsdFailureKHR` and replaced them with correctly spelled enum values.\n\n### Fixed\n\n* Occlusion Mask vertices projected based on FOV."
+  },
+  "upmCi": {
+    "footprint": "54cf34072844f63ea2e612cbc03990a5a554dcca"
+  },
+  "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.xr.openxr@1.14/manual/index.html",
+  "repository": {
+    "url": "https://github.cds.internal.unity3d.com/unity/xr.sdk.openxr.git",
+    "type": "git",
+    "revision": "1ed98b99a78ebadb016eb8a1433b0db8eb108988"
+  },
+  "_fingerprint": "97381c723a9c4a7b56925c2aa4e742b3348f7eac"
+}
