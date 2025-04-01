@@ -51,7 +51,7 @@ public class Teleport : MonoBehaviour
             Vector3 endPosition = startPosition + direction * maxDistance;
             RaycastHit hitInfo;
 
-            
+
             if (Physics.Raycast(startPosition, direction, out hitInfo, maxDistance, hitLayers, QueryTriggerInteraction.Ignore))
             {
                 endPosition = hitInfo.point;
@@ -61,7 +61,7 @@ public class Teleport : MonoBehaviour
             lineRenderer.SetPosition(0, startPosition);
             lineRenderer.SetPosition(1, endPosition);
 
-            if (Input.GetButtonDown("js2") && hitInfo.collider != null && hitInfo.collider.CompareTag(teleportTag)) //js0 windows
+            if ((Input.GetButtonDown("js2") || Input.GetKeyDown(KeyCode.Y)) && hitInfo.collider != null && hitInfo.collider.CompareTag(teleportTag)) //js0 windows
             {
                 TeleportPlayer(hitInfo.point);
             }

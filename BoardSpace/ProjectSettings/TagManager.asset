@@ -8,6 +8,7 @@ TagManager:
   - Teleportable
   - UIButton
   - CanvasTag
+  - Whiteboard
   layers:
   - Default
   - TransparentFX
