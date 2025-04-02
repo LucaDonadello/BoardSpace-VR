@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ea4585f1e798b26499144716865a4464
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275614
+  packageName: poly board games
+  packageVersion: 1.1
+  assetPath: Assets/Board_games/Prefabs/dominoes/SM_domino_20.prefab
+  uploadId: 655123

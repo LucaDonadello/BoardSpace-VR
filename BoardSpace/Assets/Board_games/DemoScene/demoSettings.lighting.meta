@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3681af6ac499e1b4188e45c601685eac
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275614
+  packageName: poly board games
+  packageVersion: 1.1
+  assetPath: Assets/Board_games/DemoScene/demoSettings.lighting
+  uploadId: 655123

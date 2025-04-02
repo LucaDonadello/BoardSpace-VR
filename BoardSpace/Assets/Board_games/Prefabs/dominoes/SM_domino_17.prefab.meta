@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: fbb1b5f235dfabc4b87946963c7a23b3
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275614
+  packageName: poly board games
+  packageVersion: 1.1
+  assetPath: Assets/Board_games/Prefabs/dominoes/SM_domino_17.prefab
+  uploadId: 655123

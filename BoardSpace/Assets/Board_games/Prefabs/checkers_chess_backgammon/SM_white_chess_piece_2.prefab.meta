@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 5ab374e9e786ea843b0603f9273f7d2a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275614
+  packageName: poly board games
+  packageVersion: 1.1
+  assetPath: Assets/Board_games/Prefabs/checkers_chess_backgammon/SM_white_chess_piece_2.prefab
+  uploadId: 655123

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f224db628476cf44a95a8b7f8fb6cd1e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275614
+  packageName: poly board games
+  packageVersion: 1.1
+  assetPath: Assets/Board_games/Prefabs/checkers_chess_backgammon/SM_chessboard.prefab
+  uploadId: 655123
