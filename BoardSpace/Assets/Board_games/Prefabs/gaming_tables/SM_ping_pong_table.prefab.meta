@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 639acfd83110eb443b01230a8b678577
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275614
+  packageName: poly board games
+  packageVersion: 1.1
+  assetPath: Assets/Board_games/Prefabs/gaming_tables/SM_ping_pong_table.prefab
+  uploadId: 655123

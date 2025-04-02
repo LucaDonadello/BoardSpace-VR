@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 4d8d07f39953c864a9a23b1e9846d59c
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275614
+  packageName: poly board games
+  packageVersion: 1.1
+  assetPath: Assets/Board_games/Prefabs/monopoly/SM_pawn_1.prefab
+  uploadId: 655123

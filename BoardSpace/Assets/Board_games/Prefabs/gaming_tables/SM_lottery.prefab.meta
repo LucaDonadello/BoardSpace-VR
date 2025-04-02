@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 97a41f8e530c31140b7a41fda0cf8780
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275614
+  packageName: poly board games
+  packageVersion: 1.1
+  assetPath: Assets/Board_games/Prefabs/gaming_tables/SM_lottery.prefab
+  uploadId: 655123

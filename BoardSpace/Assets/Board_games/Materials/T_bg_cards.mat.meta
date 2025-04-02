@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5a2260ffda2fa8d419cc988f2f6890d3
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275614
+  packageName: poly board games
+  packageVersion: 1.1
+  assetPath: Assets/Board_games/Materials/T_bg_cards.mat
+  uploadId: 655123

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 4f5a4a896d4abc84d884ee3da26f4f48
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275614
+  packageName: poly board games
+  packageVersion: 1.1
+  assetPath: Assets/Board_games/Prefabs/checkers_chess_backgammon/SM_black_chess_piece_3.prefab
+  uploadId: 655123

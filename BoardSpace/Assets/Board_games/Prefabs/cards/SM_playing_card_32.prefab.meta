@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 69dae09a475e79641b0e292c8e515cfb
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275614
+  packageName: poly board games
+  packageVersion: 1.1
+  assetPath: Assets/Board_games/Prefabs/cards/SM_playing_card_32.prefab
+  uploadId: 655123

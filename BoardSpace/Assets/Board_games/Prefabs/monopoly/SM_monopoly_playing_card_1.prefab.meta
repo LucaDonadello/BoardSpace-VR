@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 69f01c2925faa5c479a4a179a2cbb1aa
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275614
+  packageName: poly board games
+  packageVersion: 1.1
+  assetPath: Assets/Board_games/Prefabs/monopoly/SM_monopoly_playing_card_1.prefab
+  uploadId: 655123

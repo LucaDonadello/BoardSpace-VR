@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 966c644d5c9f51747974ed4191dcca9f
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275614
+  packageName: poly board games
+  packageVersion: 1.1
+  assetPath: Assets/Board_games/Prefabs/gaming_tables/SM_Jenga.prefab
+  uploadId: 655123
