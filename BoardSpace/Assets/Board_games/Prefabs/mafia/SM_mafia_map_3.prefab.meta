@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: add35cd450c28e74b8cce5ddd15e3a83
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275614
+  packageName: poly board games
+  packageVersion: 1.1
+  assetPath: Assets/Board_games/Prefabs/mafia/SM_mafia_map_3.prefab
+  uploadId: 655123

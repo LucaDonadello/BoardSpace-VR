@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: dc3637c3ba2f2824cba7da2d1b39d3af
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275614
+  packageName: poly board games
+  packageVersion: 1.1
+  assetPath: Assets/Board_games/Prefabs/dominoes/SM_domino_9.prefab
+  uploadId: 655123

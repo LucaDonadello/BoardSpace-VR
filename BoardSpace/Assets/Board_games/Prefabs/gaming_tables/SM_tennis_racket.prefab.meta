@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a64e0f898ab7a8049a8409bcbccc9003
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275614
+  packageName: poly board games
+  packageVersion: 1.1
+  assetPath: Assets/Board_games/Prefabs/gaming_tables/SM_tennis_racket.prefab
+  uploadId: 655123

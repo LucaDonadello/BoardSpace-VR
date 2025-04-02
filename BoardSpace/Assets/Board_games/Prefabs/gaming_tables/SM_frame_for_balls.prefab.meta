@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: eba8a96cc2b9eb942a4e1758f493ec43
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275614
+  packageName: poly board games
+  packageVersion: 1.1
+  assetPath: Assets/Board_games/Prefabs/gaming_tables/SM_frame_for_balls.prefab
+  uploadId: 655123
