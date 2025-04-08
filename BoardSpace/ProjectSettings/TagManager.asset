@@ -9,6 +9,10 @@ TagManager:
   - UIButton
   - CanvasTag
   - Whiteboard
+  - DoorToStudy
+  - DoorToLiving
+  - DoorToGame
+  - DoorToLiving2
   layers:
   - Default
   - TransparentFX
