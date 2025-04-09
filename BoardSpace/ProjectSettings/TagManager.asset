@@ -9,6 +9,14 @@ TagManager:
   - UIButton
   - CanvasTag
   - Whiteboard
+<<<<<<< Updated upstream
+=======
+  - DoorToStudy
+  - DoorToLiving
+  - DoorToGame
+  - DoorToLiving2
+  - Interactive
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX

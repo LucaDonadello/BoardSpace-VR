@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cdb86728281605546bb4352f8fa1be29
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 152930
+  packageName: JukeBox
+  packageVersion: 1.0
+  assetPath: Assets/JukeBox/prefab/JukeBox_Model.prefab
+  uploadId: 326806
