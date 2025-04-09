@@ -40,6 +40,12 @@ public class XRCardboardController : MonoBehaviour
         poseDriver = cameraTransform.GetComponent<TrackedPoseDriver>();
         defaultFov = cam.fieldOfView;
         initialRotation = cameraTransform.rotation;
+
+        // Optional: Use FindFirstObject to make sure you only hook up one input module per scene
+        if (vrInputModule == null)
+            vrInputModule = Object.FindFirstObjectByType<XRCardboardInputModule>();
+        if (standardInputModule == null)
+            standardInputModule = Object.FindFirstObjectByType<StandaloneInputModule>();
     }
 
     void Start()
@@ -130,9 +136,13 @@ public class XRCardboardController : MonoBehaviour
     {
         standardGroup.SetActive(!vrActive);
         vrGroup.SetActive(vrActive);
-        standardInputModule.enabled = !vrActive;
-        vrInputModule.enabled = vrActive;
-        poseDriver.enabled = vrActive;
+
+        if (standardInputModule != null)
+            standardInputModule.enabled = !vrActive;
+        if (vrInputModule != null)
+            vrInputModule.enabled = vrActive;
+        if (poseDriver != null)
+            poseDriver.enabled = vrActive;
     }
 
     void CheckDrag()
