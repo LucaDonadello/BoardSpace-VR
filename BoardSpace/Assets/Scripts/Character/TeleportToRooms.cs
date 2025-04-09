@@ -1,6 +1,7 @@
 using UnityEngine;
+using Photon.Pun;
 
-public class TeleportToRooms : MonoBehaviour
+public class TeleportToRooms : MonoBehaviourPun
 {
     public LineRenderer lineRenderer;
     public Transform player;
@@ -26,11 +27,15 @@ public class TeleportToRooms : MonoBehaviour
 
     private void TeleportPlayer(Vector3 targetPosition)
     {
+        if (!photonView.IsMine)
+        {
+            return; // Only teleport the local player's instance
+        }
+
         if (characterController != null)
         {
             characterController.enabled = false;
         }
-
 
         player.position = targetPosition + Vector3.up * teleportOffset;
 
@@ -44,41 +49,48 @@ public class TeleportToRooms : MonoBehaviour
 
     void Update()
     {
+        // Only allow teleportation for the local player
+        if (!photonView.IsMine)
+        {
+            return;
+        }
+
         float maxDistance = 10;
         Vector3 startPosition = player.position;
         Vector3 direction = cameraTransform.forward;
         Vector3 endPosition = startPosition + direction * maxDistance;
         RaycastHit hitInfo;
 
-
         if (Physics.Raycast(startPosition, direction, out hitInfo, maxDistance, hitLayers, QueryTriggerInteraction.Ignore))
         {
             endPosition = hitInfo.point;
         }
 
-
         lineRenderer.SetPosition(0, startPosition);
         lineRenderer.SetPosition(1, endPosition);
 
-        if ((Input.GetButtonDown("js2") || Input.GetKeyDown(KeyCode.Y)) && hitInfo.collider != null && hitInfo.collider.CompareTag("DoorToStudy")) //js0 windows
+        if ((Input.GetButtonDown("js2") || Input.GetKeyDown(KeyCode.Y)) && hitInfo.collider != null)
         {
-            Vector3 targetPosition = new Vector3(5, 0, 21);
-            TeleportPlayer(targetPosition);
-        }
-        else if ((Input.GetButtonDown("js2") || Input.GetKeyDown(KeyCode.Y)) && hitInfo.collider != null && hitInfo.collider.CompareTag("DoorToLiving")) //js0 windows
-        {
-            Vector3 targetPosition = new Vector3(10, 0, 9);
-            TeleportPlayer(targetPosition);
-        }
-        else if ((Input.GetButtonDown("js2") || Input.GetKeyDown(KeyCode.Y)) && hitInfo.collider != null && hitInfo.collider.CompareTag("DoorToLiving2")) //js0 windows
-        {
-            Vector3 targetPosition = new Vector3(10, 0, -9);
-            TeleportPlayer(targetPosition);
-        }
-        else if ((Input.GetButtonDown("js2") || Input.GetKeyDown(KeyCode.Y)) && hitInfo.collider != null && hitInfo.collider.CompareTag("DoorToGame")) //js0 windows
-        {
-            Vector3 targetPosition = new Vector3(10, 0, -20);
-            TeleportPlayer(targetPosition);
+            if (hitInfo.collider.CompareTag("DoorToStudy"))
+            {
+                Vector3 targetPosition = new Vector3(5, 0, 21);
+                TeleportPlayer(targetPosition);
+            }
+            else if (hitInfo.collider.CompareTag("DoorToLiving"))
+            {
+                Vector3 targetPosition = new Vector3(10, 0, 9);
+                TeleportPlayer(targetPosition);
+            }
+            else if (hitInfo.collider.CompareTag("DoorToLiving2"))
+            {
+                Vector3 targetPosition = new Vector3(10, 0, -9);
+                TeleportPlayer(targetPosition);
+            }
+            else if (hitInfo.collider.CompareTag("DoorToGame"))
+            {
+                Vector3 targetPosition = new Vector3(10, 0, -20);
+                TeleportPlayer(targetPosition);
+            }
         }
     }
 }

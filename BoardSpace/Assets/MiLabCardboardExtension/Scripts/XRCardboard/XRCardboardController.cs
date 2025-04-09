@@ -6,8 +6,9 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SpatialTracking;
+using Photon.Pun;
 
-public class XRCardboardController : MonoBehaviour
+public class XRCardboardController : MonoBehaviourPun
 {
     [SerializeField]
     Transform cameraTransform = default;
@@ -40,10 +41,24 @@ public class XRCardboardController : MonoBehaviour
         poseDriver = cameraTransform.GetComponent<TrackedPoseDriver>();
         defaultFov = cam.fieldOfView;
         initialRotation = cameraTransform.rotation;
+
+        if (vrInputModule == null)
+            vrInputModule = Object.FindFirstObjectByType<XRCardboardInputModule>();
+        if (standardInputModule == null)
+            standardInputModule = Object.FindFirstObjectByType<StandaloneInputModule>();
     }
 
     void Start()
     {
+        // Photon ownership check
+        if (!photonView.IsMine)
+        {
+            if (cameraTransform != null)
+                cameraTransform.gameObject.SetActive(false); // Disable remote player's camera
+            this.enabled = false; // Disable this script on remote players
+            return;
+        }
+
 #if UNITY_EDITOR
         SetObjects(vrActive);
 #else
@@ -53,6 +68,8 @@ public class XRCardboardController : MonoBehaviour
 
     void Update()
     {
+        if (!photonView.IsMine) return;
+
 #if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.Escape))
 #else
@@ -130,9 +147,13 @@ public class XRCardboardController : MonoBehaviour
     {
         standardGroup.SetActive(!vrActive);
         vrGroup.SetActive(vrActive);
-        standardInputModule.enabled = !vrActive;
-        vrInputModule.enabled = vrActive;
-        poseDriver.enabled = vrActive;
+
+        if (standardInputModule != null)
+            standardInputModule.enabled = !vrActive;
+        if (vrInputModule != null)
+            vrInputModule.enabled = vrActive;
+        if (poseDriver != null)
+            poseDriver.enabled = vrActive;
     }
 
     void CheckDrag()
