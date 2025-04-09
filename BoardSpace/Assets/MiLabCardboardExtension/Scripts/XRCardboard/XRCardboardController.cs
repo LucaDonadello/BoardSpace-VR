@@ -6,8 +6,9 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SpatialTracking;
+using Photon.Pun;
 
-public class XRCardboardController : MonoBehaviour
+public class XRCardboardController : MonoBehaviourPun
 {
     [SerializeField]
     Transform cameraTransform = default;
@@ -41,7 +42,6 @@ public class XRCardboardController : MonoBehaviour
         defaultFov = cam.fieldOfView;
         initialRotation = cameraTransform.rotation;
 
-        // Optional: Use FindFirstObject to make sure you only hook up one input module per scene
         if (vrInputModule == null)
             vrInputModule = Object.FindFirstObjectByType<XRCardboardInputModule>();
         if (standardInputModule == null)
@@ -50,6 +50,15 @@ public class XRCardboardController : MonoBehaviour
 
     void Start()
     {
+        // Photon ownership check
+        if (!photonView.IsMine)
+        {
+            if (cameraTransform != null)
+                cameraTransform.gameObject.SetActive(false); // Disable remote player's camera
+            this.enabled = false; // Disable this script on remote players
+            return;
+        }
+
 #if UNITY_EDITOR
         SetObjects(vrActive);
 #else
@@ -59,6 +68,8 @@ public class XRCardboardController : MonoBehaviour
 
     void Update()
     {
+        if (!photonView.IsMine) return;
+
 #if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.Escape))
 #else

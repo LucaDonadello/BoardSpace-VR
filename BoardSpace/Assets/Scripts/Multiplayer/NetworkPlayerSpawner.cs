@@ -10,61 +10,51 @@ public class NetworkPlayerSpawner : MonoBehaviourPunCallbacks
     {
         base.OnJoinedRoom();
 
-        // Spawn player prefab for the local player
+        // Spawn the player prefab at spawner position
         spawnedPlayerPrefab = PhotonNetwork.Instantiate("Network Player", transform.position, transform.rotation);
 
-        // Get the PhotonView component
         var photonView = spawnedPlayerPrefab.GetComponent<PhotonView>();
-
-        // Get the camera and audio listener components (ensure only local player's camera is enabled)
-        Camera cam = spawnedPlayerPrefab.GetComponentInChildren<Camera>();
-        AudioListener listener = spawnedPlayerPrefab.GetComponentInChildren<AudioListener>();
 
         if (photonView.IsMine)
         {
-            // Enable camera and audio listener for local player only
-            if (cam != null)
-            {
-                cam.enabled = true;  // Enable camera for local player
-            }
-
-            if (listener != null)
-            {
-                listener.enabled = true;  // Enable audio listener for local player
-            }
-
-            // Enable global EventSystem and InputModule for the local player
-            EventSystem eventSystem = Object.FindFirstObjectByType<EventSystem>();
-            if (eventSystem != null)
-            {
-                eventSystem.enabled = true;
-            }
-
-            StandaloneInputModule inputModule = Object.FindFirstObjectByType<StandaloneInputModule>();
-            if (inputModule != null)
-            {
-                inputModule.enabled = true;
-            }
+            // Enable only this player's camera/audio
+            EnableLocalPlayerComponents(spawnedPlayerPrefab);
         }
-        else
-        {
-            // Disable camera and audio listener for remote players
-            if (cam != null)
-            {
-                cam.enabled = false; // Disable camera for remote players
-            }
-            if (listener != null)
-            {
-                listener.enabled = false; // Disable audio listener for remote players
-            }
-        }
+        //else
+        //{
+        //    // Disable camera/audio for remote players
+        //    DisableRemotePlayerComponents(spawnedPlayerPrefab);
+        //}
     }
+
+    private void EnableLocalPlayerComponents(GameObject player)
+    {
+        Camera cam = player.GetComponentInChildren<Camera>(true);
+        AudioListener listener = player.GetComponentInChildren<AudioListener>(true);
+
+        if (cam) cam.enabled = true;
+        if (listener) listener.enabled = true;
+
+        EventSystem eventSystem = Object.FindFirstObjectByType<EventSystem>();
+        if (eventSystem) eventSystem.enabled = true;
+
+        StandaloneInputModule inputModule = Object.FindFirstObjectByType<StandaloneInputModule>();
+        if (inputModule) inputModule.enabled = true;
+    }
+
+    //private void DisableRemotePlayerComponents(GameObject player)
+    //{
+    //    Camera cam = player.GetComponentInChildren<Camera>(true);
+    //    AudioListener listener = player.GetComponentInChildren<AudioListener>(true);
+
+    //    if (cam) cam.enabled = false;
+    //    if (listener) listener.enabled = false;
+    //}
 
     public override void OnLeftRoom()
     {
         base.OnLeftRoom();
 
-        // Destroy the player prefab when leaving the room
         if (spawnedPlayerPrefab != null)
             PhotonNetwork.Destroy(spawnedPlayerPrefab);
     }
