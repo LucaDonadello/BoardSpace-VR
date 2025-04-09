@@ -3,30 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags:
-  - Outline
-  - Teleportable
-  - UIButton
-  - CanvasTag
-  - Whiteboard
-<<<<<<< Updated upstream
-=======
-  - DoorToStudy
-  - DoorToLiving
-  - DoorToGame
-  - DoorToLiving2
-  - Interactive
->>>>>>> Stashed changes
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Interactive
+  - 
   - Water
   - UI
   - 
   - 
-  - UILayer
+  - 
   - 
   - 
   - 
