@@ -8,6 +8,7 @@ public class CharacterSelectionMenu : MonoBehaviour
     public Image displayer;
     public TextMeshProUGUI characterNameText;
     public GameObject player;
+    private GameObject currentPlayerInstance;
     private CharacterMovement playerMovement;
     private Teleport playerTeleport;
     private TeleportToRooms playerTeleportToRooms;
@@ -67,8 +68,15 @@ public class CharacterSelectionMenu : MonoBehaviour
     public void SelectCharacter()
     {
         // Instantiate the selected character prefab in the game world
-        GameObject selectedCharacter = Instantiate(characters[currentIndex].characterPrefab, Vector3.zero, Quaternion.identity);
-        Debug.Log("Selected Character: " + characters[currentIndex].characterName);
+        CharacterData selectedCharacterData = characters[currentIndex];
+        if (currentPlayerInstance != null)
+        {
+            Destroy(currentPlayerInstance); // Destroy the previous instance if it exists
+        }
+        Transform cam = player.transform.Find("XRCardboardRig/HeightOffset/Main Camera");
+        currentPlayerInstance = Instantiate(selectedCharacterData.characterPrefab, cam);
+        currentPlayerInstance.transform.localRotation = Quaternion.identity;
+        currentPlayerInstance.transform.localPosition = new Vector3(0, -2.5f, 0);
     }
 
     public void ExitMenu()
