@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
-public class CharacterMovement : MonoBehaviour
+public class CharacterMovement : MonoBehaviourPun
 {
     CharacterController charCntrl;
     [Tooltip("The speed at which the character will move.")]
@@ -21,34 +22,45 @@ public class CharacterMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Get horizontal and Vertical movements
-        float horComp = Input.GetAxis("Horizontal");
-        float vertComp = Input.GetAxis("Vertical");
-
-        if (joyStickMode)
+        // Only allow movement for the local player
+        if (!photonView.IsMine)
         {
-            horComp = Input.GetAxis("Vertical");
-            vertComp = Input.GetAxis("Horizontal") * -1;
+            return; // If it's not the local player, skip this update
         }
+        else
+        {
+            // Get horizontal and vertical inputs for movement (Keyboard or Joystick)
+            float horComp = Input.GetAxis("Horizontal") * -1; // Left/Right (A/D or Left Stick)
+            float vertComp = Input.GetAxis("Vertical") * -1; // Forward/Backward (W/S or Up/Down Stick)
 
-        Vector3 moveVect = Vector3.zero;
+            // If using joystick mode, adjust the axes as needed
+            if (joyStickMode)
+            {
+                horComp = Input.GetAxis("Vertical") * -1;   // Joystick Forward/Backward
+                vertComp = Input.GetAxis("Horizontal") * -1;  // Joystick Left/Right (reverse axis for correct direction)
+            }
 
-        //Get look Direction
-        Vector3 cameraLook = cameraObj.transform.forward;
-        cameraLook.y = 0f;
-        cameraLook = cameraLook.normalized;
+            // Calculate movement direction
+            Vector3 moveVect = Vector3.zero;
 
-        Vector3 forwardVect = cameraLook;
-        Vector3 rightVect = Vector3.Cross(forwardVect, Vector3.up).normalized * -1;
+            // Get look direction based on the camera's forward direction (ignoring Y-axis)
+            Vector3 cameraLook = cameraObj.transform.forward;
+            cameraLook.y = 0f; // Ignore vertical component to keep player movement level
+            cameraLook = cameraLook.normalized;
 
-        moveVect += rightVect * horComp;
-        moveVect += forwardVect * vertComp;
+            // Calculate forward and right direction for movement relative to camera
+            Vector3 forwardVect = cameraLook;
+            Vector3 rightVect = Vector3.Cross(forwardVect, Vector3.up).normalized;
 
-        moveVect *= speed;
-     
+            // Add movement based on user input
+            moveVect += rightVect * horComp; // Move sideways (Left/Right)
+            moveVect += forwardVect * vertComp; // Move forward/backward
 
-        charCntrl.SimpleMove(moveVect);
+            // Apply speed factor
+            moveVect *= speed;
 
-
+            // Move the character using the CharacterController
+            charCntrl.SimpleMove(moveVect); // This applies the movement
+        }
     }
 }

@@ -1,6 +1,8 @@
 using UnityEngine;
+using Photon.Pun;
+using UnityEngine.TextCore.Text;
 
-public class Teleport : MonoBehaviour
+public class Teleport : MonoBehaviourPun
 {
     public LineRenderer lineRenderer;
     public Transform player;
@@ -27,11 +29,16 @@ public class Teleport : MonoBehaviour
 
     private void TeleportPlayer(Vector3 targetPosition)
     {
+        // Only allow teleportation for the local player
+        if (!photonView.IsMine)
+        {
+            return;
+        }
+
         if (characterController != null)
         {
             characterController.enabled = false;
         }
-
 
         player.position = targetPosition + Vector3.up * teleportOffset;
 
@@ -45,25 +52,29 @@ public class Teleport : MonoBehaviour
 
     void Update()
     {
-            float maxDistance = 10;
-            Vector3 startPosition = player.position;
-            Vector3 direction = cameraTransform.forward;
-            Vector3 endPosition = startPosition + direction * maxDistance;
-            RaycastHit hitInfo;
+        // Only process teleportation for the local player
+        if (!photonView.IsMine)
+        {
+            return;
+        }
 
+        float maxDistance = 10;
+        Vector3 startPosition = player.position;
+        Vector3 direction = cameraTransform.forward;
+        Vector3 endPosition = startPosition + direction * maxDistance;
+        RaycastHit hitInfo;
 
-            if (Physics.Raycast(startPosition, direction, out hitInfo, maxDistance, hitLayers, QueryTriggerInteraction.Ignore))
-            {
-                endPosition = hitInfo.point;
-            }
+        if (Physics.Raycast(startPosition, direction, out hitInfo, maxDistance, hitLayers, QueryTriggerInteraction.Ignore))
+        {
+            endPosition = hitInfo.point;
+        }
 
+        lineRenderer.SetPosition(0, startPosition);
+        lineRenderer.SetPosition(1, endPosition);
 
-            lineRenderer.SetPosition(0, startPosition);
-            lineRenderer.SetPosition(1, endPosition);
-
-            if ((Input.GetButtonDown("js2") || Input.GetKeyDown(KeyCode.Y)) && hitInfo.collider != null && hitInfo.collider.CompareTag(teleportTag)) //js0 windows
-            {
-                TeleportPlayer(hitInfo.point);
-            }
+        if ((Input.GetButtonDown("js2") || Input.GetKeyDown(KeyCode.Y)) && hitInfo.collider != null && hitInfo.collider.CompareTag(teleportTag))
+        {
+            TeleportPlayer(hitInfo.point);
+        }
     }
 }
