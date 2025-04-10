@@ -1,58 +1,50 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class OutlineEffect : MonoBehaviour
 {
+    [Header("Raycast Settings")]
     public Transform rayOrigin;
-    public string targetTag = "Door";
-    public float maxDistance = 10;
+    public float maxDistance = 10f;
+
+    [Header("Tags to Outline (partial match allowed)")]
+    public List<string> targetTags = new List<string> { "Door", "Interactable" };
 
     private Outline lastOutlinedObject = null;
 
     void Update()
     {
-
-        RaycastHit hitInfo;
-        bool hit = Physics.Raycast(rayOrigin.position, Camera.main.transform.forward, out hitInfo, maxDistance);
-
-        if (hit)
+        Ray ray = new Ray(rayOrigin.position, Camera.main.transform.forward);
+        
+        if (Physics.Raycast(ray, out RaycastHit hitInfo, maxDistance))
         {
             Collider hitCollider = hitInfo.collider;
+            string tag = hitCollider.tag;
 
-            if (hitCollider != null && hitCollider.tag.Contains(targetTag))
+            // Check if tag contains any of the defined target tags
+            bool isMatchingTag = targetTags.Exists(t => tag.Contains(t));
+            if (isMatchingTag)
             {
                 Outline outline = hitCollider.GetComponent<Outline>();
-
+                if (outline == null)
+                    return;
 
                 if (lastOutlinedObject != null && lastOutlinedObject != outline)
                 {
                     lastOutlinedObject.enabled = false;
                 }
 
-
-                if (outline != null)
-                {
-                    outline.enabled = true;
-                    lastOutlinedObject = outline;
-                }
-            }
-
-            else
-            {
-                if (lastOutlinedObject != null)
-                {
-                    lastOutlinedObject.enabled = false;
-                    lastOutlinedObject = null;
-                }
+                outline.enabled = true;
+                lastOutlinedObject = outline;
+                return;
             }
         }
 
-        else
+        // No valid object hit or tag doesn't match
+        if (lastOutlinedObject != null)
         {
-            if (lastOutlinedObject != null)
-            {
-                lastOutlinedObject.enabled = false;
-                lastOutlinedObject = null;
-            }
+            lastOutlinedObject.enabled = false;
+            lastOutlinedObject = null;
         }
     }
 }
