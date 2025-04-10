@@ -70,6 +70,7 @@ GameObject:
   - component: {fileID: 8887935798613776773}
   - component: {fileID: 223222793774890737}
   - component: {fileID: -8239911721728361018}
+  - component: {fileID: 4306748425767810889}
   m_Layer: 0
   m_Name: Network Player
   m_TagString: Player
@@ -369,6 +370,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9fb0af80929277446bc8d1b31dce8a69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineRenderer: {fileID: 7675724426238331114}
+  player: {fileID: 8915594982461393849}
+  cameraTransform: {fileID: 4790158781579931229}
+  InteractableTag: Interactable
+  maxDistance: 10
+  hitLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &4306748425767810889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3111482121541135492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e695e7a0f84854385708fb96c9ad1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lineRenderer: {fileID: 7675724426238331114}
