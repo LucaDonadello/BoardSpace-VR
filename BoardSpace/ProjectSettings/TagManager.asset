@@ -13,6 +13,8 @@ TagManager:
   - DoorToLiving
   - DoorToGame
   - DoorToLiving2
+  - interactable
+  - Interactable
   layers:
   - Default
   - TransparentFX

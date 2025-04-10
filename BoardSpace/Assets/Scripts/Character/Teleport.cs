@@ -1,5 +1,6 @@
 using UnityEngine;
 using Photon.Pun;
+using UnityEngine.TextCore.Text;
 
 public class Teleport : MonoBehaviourPun
 {
