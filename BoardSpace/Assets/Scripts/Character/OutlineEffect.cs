@@ -8,7 +8,7 @@ public class OutlineEffect : MonoBehaviour
     public float maxDistance = 10f;
 
     [Header("Tags to Outline (partial match allowed)")]
-    public List<string> targetTags = new List<string> { "Door", "Interactable", "Grabbable" };
+    public List<string> targetTags = new List<string> { "Door", "Grabbable", "Interactable",};
 
     private Outline lastOutlinedObject = null;
 
@@ -21,7 +21,7 @@ public class OutlineEffect : MonoBehaviour
             Collider hitCollider = hitInfo.collider;
             string tag = hitCollider.tag;
 
-            Debug.Log($"Hit Object: {hitCollider.name}, Tag: {tag}");
+            //Debug.Log($"Hit Object: {hitCollider.name}, Tag: {tag}");
 
             // Check if tag contains any of the defined target tags
             bool isMatchingTag = targetTags.Exists(t => tag.Contains(t));

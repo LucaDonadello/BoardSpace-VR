@@ -6,7 +6,6 @@ public class GrabItemVR : MonoBehaviourPun
     public LineRenderer lineRenderer;
     public Transform player;
     public Transform cameraTransform;
-    public float teleportOffset = 0.5f;
     public LayerMask hitLayers;
     public Vector3 grabLocation = new Vector3(-0.5f, -1f, 1f);
     public string grabbableTag = "Grabbable";
@@ -23,7 +22,7 @@ public class GrabItemVR : MonoBehaviourPun
         if (isHolding && (Input.GetButtonDown("js0") || Input.GetKeyDown(KeyCode.G)))
         {
             DropObject();
-            return; // Early return to prevent grabbing in same frame
+            return;
         }
 
         float maxDistance = 10;
@@ -43,9 +42,8 @@ public class GrabItemVR : MonoBehaviourPun
         if (!isHolding && (Input.GetButtonDown("js0") || Input.GetKeyDown(KeyCode.G)))
         {
             GameObject hitObject = hitInfo.collider.gameObject;
-            Outline outline = hitObject.GetComponent<Outline>();
 
-            if (outline != null && outline.enabled && hitObject.CompareTag(grabbableTag))
+            if ( hitObject.CompareTag(grabbableTag))
             {
                 currentObject = hitObject;
                 currentRb = currentObject.GetComponent<Rigidbody>();

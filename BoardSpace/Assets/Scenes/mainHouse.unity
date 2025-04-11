@@ -32489,7 +32489,7 @@ GameObject:
   - component: {fileID: 48388072595643565}
   m_Layer: 0
   m_Name: Wrapper
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41319,7 +41319,7 @@ GameObject:
   - component: {fileID: 640439464666838839}
   m_Layer: 0
   m_Name: Label
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

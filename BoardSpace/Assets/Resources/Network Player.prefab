@@ -299,6 +299,7 @@ MonoBehaviour:
   targetTags:
   - Door
   - Interactable
+  - Grabbable
 --- !u!114 &4865097175093958412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -416,7 +417,6 @@ MonoBehaviour:
   lineRenderer: {fileID: 7675724426238331114}
   player: {fileID: 8915594982461393849}
   cameraTransform: {fileID: 4790158781579931229}
-  teleportOffset: 0.5
   hitLayers:
     serializedVersion: 2
     m_Bits: 4294967295
