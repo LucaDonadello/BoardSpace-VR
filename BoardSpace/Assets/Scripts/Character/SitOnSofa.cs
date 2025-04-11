@@ -34,6 +34,7 @@ public class SitOnSofa : MonoBehaviourPun
     {
         if (!photonView.IsMine) return;
 
+
         Vector3 startPosition = player.position;
         Vector3 direction = cameraTransform.forward;
         Vector3 endPosition = startPosition + direction * maxDistance;

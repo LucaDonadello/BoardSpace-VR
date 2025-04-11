@@ -10,6 +10,8 @@ public class Teleport : MonoBehaviourPun
     public string teleportTag = "Teleportable";
     public float teleportOffset = 0.5f;
     public LayerMask hitLayers;
+    public Camera playerCamera;
+    public float maxDistance = 100f;
 
     private CharacterController characterController;
 
@@ -58,7 +60,32 @@ public class Teleport : MonoBehaviourPun
             return;
         }
 
-        float maxDistance = 10;
+        RaycastHit hit;
+        Ray ray = new Ray(playerCamera.transform.position, playerCamera.transform.forward);
+        if(Physics.Raycast(ray, out hit, maxDistance))
+        {
+            if ((Input.GetButtonDown("js2") || Input.GetKeyDown(KeyCode.Y)) && hit.collider != null && hit.collider.CompareTag(teleportTag))
+            {
+                Debug.Log("Raycast hit: " + hit.collider.gameObject.name);
+
+                        // Only allow teleportation for the local player
+                if (!photonView.IsMine)
+                    return;
+
+                if (characterController != null)
+                    characterController.enabled = false;
+
+                player.position = hit.point + Vector3.up * 0.5f;
+
+                if (characterController != null)
+                    characterController.enabled = true;
+
+                Debug.Log("Player teleported to: " + player.position);
+            }
+        }
+
+
+        /*
         Vector3 startPosition = player.position;
         Vector3 direction = cameraTransform.forward;
         Vector3 endPosition = startPosition + direction * maxDistance;
@@ -76,5 +103,6 @@ public class Teleport : MonoBehaviourPun
         {
             TeleportPlayer(hitInfo.point);
         }
+        */
     }
 }

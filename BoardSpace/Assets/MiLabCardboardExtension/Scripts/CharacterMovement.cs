@@ -11,7 +11,7 @@ public class CharacterMovement : MonoBehaviourPun
     [Tooltip("The camera representing where the character is looking.")]
     public GameObject cameraObj;
     [Tooltip("Should be checked if using the Bluetooth Controller to move. If using keyboard, leave this unchecked.")]
-    public bool joyStickMode;
+    public bool joyStickMode = false;
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +31,7 @@ public class CharacterMovement : MonoBehaviourPun
         {
             // Get horizontal and vertical inputs for movement (Keyboard or Joystick)
             float horComp = Input.GetAxis("Horizontal") * -1; // Left/Right (A/D or Left Stick)
-            float vertComp = Input.GetAxis("Vertical") * -1; // Forward/Backward (W/S or Up/Down Stick)
+            float vertComp = Input.GetAxis("Vertical"); // Forward/Backward (W/S or Up/Down Stick)
 
             // If using joystick mode, adjust the axes as needed
             if (joyStickMode)
