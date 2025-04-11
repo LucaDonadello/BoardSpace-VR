@@ -131,6 +131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_pawn_1 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1459082648423476086, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 2266545762341482956, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -353,6 +357,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_monopoly_playing_card_9
       objectReference: {fileID: 0}
+    - target: {fileID: 959750697270993369, guid: e6acbb21e598ed649a0311a3c2f992c3, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -369,6 +377,10 @@ PrefabInstance:
     - target: {fileID: 1459082648423476086, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
       propertyPath: m_Name
       value: SM_pawn_1 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1459082648423476086, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 2266545762341482956, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
       propertyPath: m_LocalScale.x
@@ -443,6 +455,10 @@ PrefabInstance:
     - target: {fileID: 6984822163492667912, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
       propertyPath: m_Name
       value: SM_pawn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984822163492667912, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 7756538230453950642, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
       propertyPath: m_LocalScale.x
@@ -625,6 +641,10 @@ PrefabInstance:
     - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money_6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 6902419635221977078, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1355,6 +1375,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_black_chess_piece
       objectReference: {fileID: 0}
+    - target: {fileID: 371201668148684655, guid: da2fc1af89bd67246b71e2bd51acfc07, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 1039510590126079445, guid: da2fc1af89bd67246b71e2bd51acfc07, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.022641182
@@ -1525,6 +1549,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_monopoly_playing_card_6
       objectReference: {fileID: 0}
+    - target: {fileID: 2495043428404527714, guid: baf88563d8c18614f82954b1728dd89b, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 3020785515793864920, guid: baf88563d8c18614f82954b1728dd89b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.11798382
@@ -1690,6 +1718,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_billiard_ball_2
       objectReference: {fileID: 0}
+    - target: {fileID: 3641442504368656725, guid: 94ff5fcdb9bcb484a9cc1657dd159676, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 4162117732052454383, guid: 94ff5fcdb9bcb484a9cc1657dd159676, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -1764,6 +1796,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_white_chess_piece_5 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 2792853993513692562, guid: c32795021b2439244a653c16c80134dd, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 3281405885520967464, guid: c32795021b2439244a653c16c80134dd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.06985092
@@ -1825,6 +1861,10 @@ PrefabInstance:
     - target: {fileID: 1459082648423476086, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
       propertyPath: m_Name
       value: SM_pawn_1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1459082648423476086, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 2266545762341482956, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
       propertyPath: m_LocalScale.x
@@ -2116,6 +2156,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_black_chess_piece_5 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 8470459714774051563, guid: b2fbcabf072e2104fb7ec09830d7c596, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 9135216046228992081, guid: b2fbcabf072e2104fb7ec09830d7c596, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.16250706
@@ -2286,6 +2330,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_counterfeit_money_2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 144554877265685039, guid: ce17f06889b3af34f85671702aaef8cb, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 669452264024895637, guid: ce17f06889b3af34f85671702aaef8cb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.3800001
@@ -2455,6 +2503,10 @@ PrefabInstance:
     - target: {fileID: 353457539317972371, guid: 924d478d3a145814082b28102bd2bfd2, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 353457539317972371, guid: 924d478d3a145814082b28102bd2bfd2, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 1129395730923611945, guid: 924d478d3a145814082b28102bd2bfd2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2676,6 +2728,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_white_chess_piece_3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8877562276236211603, guid: 945058b2fbf16e84f92c3e08ef17a688, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2806,6 +2862,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_monopoly_playing_card_3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2793468359680611773, guid: 83217b43ceb04ae46807dd4083a92e3b, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 3283040568367517447, guid: 83217b43ceb04ae46807dd4083a92e3b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.02945137
@@ -2902,6 +2962,10 @@ PrefabInstance:
     - target: {fileID: 2227850617454049417, guid: 5ab374e9e786ea843b0603f9273f7d2a, type: 3}
       propertyPath: m_Name
       value: SM_white_chess_piece_2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2227850617454049417, guid: 5ab374e9e786ea843b0603f9273f7d2a, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3032,6 +3096,10 @@ PrefabInstance:
     - target: {fileID: 2617121809366402462, guid: fbfbf824ce58cc54c8a7e1b39f1e5bbb, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2617121809366402462, guid: fbfbf824ce58cc54c8a7e1b39f1e5bbb, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 3394081103743950628, guid: fbfbf824ce58cc54c8a7e1b39f1e5bbb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3207,6 +3275,10 @@ PrefabInstance:
     - target: {fileID: 1459082648423476086, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
       propertyPath: m_Name
       value: SM_pawn_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1459082648423476086, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 2266545762341482956, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
       propertyPath: m_LocalScale.x
@@ -3543,6 +3615,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_white_chess_piece_3
       objectReference: {fileID: 0}
+    - target: {fileID: 8877562276236211603, guid: 945058b2fbf16e84f92c3e08ef17a688, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3765,6 +3841,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_black_chess_piece_3
       objectReference: {fileID: 0}
+    - target: {fileID: 7965737210816487567, guid: 4f5a4a896d4abc84d884ee3da26f4f48, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3895,6 +3975,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_pawn_1
       objectReference: {fileID: 0}
+    - target: {fileID: 108483285987778071, guid: 4d8d07f39953c864a9a23b1e9846d59c, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 777636564509263021, guid: 4d8d07f39953c864a9a23b1e9846d59c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.12537003
@@ -3951,6 +4035,10 @@ PrefabInstance:
     - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money_6 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 6902419635221977078, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4383,6 +4471,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_black_chess_piece_1
       objectReference: {fileID: 0}
+    - target: {fileID: 7861813462165523876, guid: 275d456800a07794485da1e74f3690d8, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4444,6 +4536,10 @@ PrefabInstance:
     - target: {fileID: 4075289507344095569, guid: ccbaa9a3573af454a9b24d1f30a0d12b, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4075289507344095569, guid: ccbaa9a3573af454a9b24d1f30a0d12b, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4683,6 +4779,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_counterfeit_money_3
       objectReference: {fileID: 0}
+    - target: {fileID: 2617121809366402462, guid: fbfbf824ce58cc54c8a7e1b39f1e5bbb, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 3394081103743950628, guid: fbfbf824ce58cc54c8a7e1b39f1e5bbb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4745,6 +4845,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_monopoly_playing_card_10 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4837429415178699702, guid: 8073b6d1def335847b4b3bbc94f1d4f5, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 5217931169683790092, guid: 8073b6d1def335847b4b3bbc94f1d4f5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.6868868
@@ -4801,6 +4905,10 @@ PrefabInstance:
     - target: {fileID: 1459082648423476086, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
       propertyPath: m_Name
       value: SM_pawn_1 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1459082648423476086, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 2266545762341482956, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
       propertyPath: m_LocalScale.x
@@ -4875,6 +4983,10 @@ PrefabInstance:
     - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money_6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 6902419635221977078, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5154,6 +5266,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_counterfeit_money_6 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 6902419635221977078, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.22000027
@@ -5410,6 +5526,10 @@ PrefabInstance:
     - target: {fileID: 1459082648423476086, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
       propertyPath: m_Name
       value: SM_pawn_1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1459082648423476086, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 2266545762341482956, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
       propertyPath: m_LocalScale.x
@@ -5700,6 +5820,10 @@ PrefabInstance:
     - target: {fileID: 2396476434574478486, guid: 4078994b6f92afa4d9712e740619740a, type: 3}
       propertyPath: m_Name
       value: SM_monopoly_playing_card_11 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2396476434574478486, guid: 4078994b6f92afa4d9712e740619740a, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 3029284493150672428, guid: 4078994b6f92afa4d9712e740619740a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6014,6 +6138,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_ping_pong_ball
       objectReference: {fileID: 0}
+    - target: {fileID: 1811243784000570544, guid: 1f56cc61de89a704a9676d60fd98c90e, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6075,6 +6203,10 @@ PrefabInstance:
     - target: {fileID: 4075289507344095569, guid: ccbaa9a3573af454a9b24d1f30a0d12b, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4075289507344095569, guid: ccbaa9a3573af454a9b24d1f30a0d12b, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6138,6 +6270,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_counterfeit_money (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3294616549224521466, guid: 4baa6449ec3e32542b347a5768d9fb3c, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6199,6 +6335,10 @@ PrefabInstance:
     - target: {fileID: 8056844646857949719, guid: a4c9c5ddb67655e47a7b0735e36228a7, type: 3}
       propertyPath: m_Name
       value: SM_monopoly_playing_card_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8056844646857949719, guid: a4c9c5ddb67655e47a7b0735e36228a7, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6432,6 +6572,10 @@ PrefabInstance:
     - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money_6 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 6902419635221977078, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6871,6 +7015,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_billiard_ball_8
       objectReference: {fileID: 0}
+    - target: {fileID: 704608833004328619, guid: 761b2fa59be40f545bdf395915e84feb, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6933,6 +7081,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_monopoly_playing_card_9 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 959750697270993369, guid: e6acbb21e598ed649a0311a3c2f992c3, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6949,6 +7101,10 @@ PrefabInstance:
     - target: {fileID: 1459082648423476086, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
       propertyPath: m_Name
       value: SM_pawn_1 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1459082648423476086, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 2266545762341482956, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
       propertyPath: m_LocalScale.x
@@ -7496,6 +7652,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_counterfeit_money (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3294616549224521466, guid: 4baa6449ec3e32542b347a5768d9fb3c, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7666,6 +7826,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_tennis_racket
       objectReference: {fileID: 0}
+    - target: {fileID: 6712185274879688812, guid: a64e0f898ab7a8049a8409bcbccc9003, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7687,6 +7851,10 @@ PrefabInstance:
     - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money_6 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 6902419635221977078, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7857,6 +8025,10 @@ PrefabInstance:
     - target: {fileID: 353457539317972371, guid: 924d478d3a145814082b28102bd2bfd2, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 353457539317972371, guid: 924d478d3a145814082b28102bd2bfd2, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 1129395730923611945, guid: 924d478d3a145814082b28102bd2bfd2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8187,6 +8359,10 @@ PrefabInstance:
     - target: {fileID: 3193951039812963438, guid: 6e96f045968974448b6bd0d14b622331, type: 3}
       propertyPath: m_Name
       value: SM_cue_stand
+      objectReference: {fileID: 0}
+    - target: {fileID: 3193951039812963438, guid: 6e96f045968974448b6bd0d14b622331, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8534,6 +8710,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_monopoly_playing_card_5
       objectReference: {fileID: 0}
+    - target: {fileID: 1357089776818336398, guid: f11115a7492c3984fbd71ccd988eb16a, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 1846063919611930676, guid: f11115a7492c3984fbd71ccd988eb16a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.7368865
@@ -8590,6 +8770,10 @@ PrefabInstance:
     - target: {fileID: 144554877265685039, guid: ce17f06889b3af34f85671702aaef8cb, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money_2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 144554877265685039, guid: ce17f06889b3af34f85671702aaef8cb, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 669452264024895637, guid: ce17f06889b3af34f85671702aaef8cb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8652,7 +8836,7 @@ GameObject:
   - component: {fileID: 586438718}
   m_Layer: 0
   m_Name: MoneyGroup (2)
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8807,6 +8991,10 @@ PrefabInstance:
     - target: {fileID: 8470459714774051563, guid: b2fbcabf072e2104fb7ec09830d7c596, type: 3}
       propertyPath: m_Name
       value: SM_black_chess_piece_5 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470459714774051563, guid: b2fbcabf072e2104fb7ec09830d7c596, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 9135216046228992081, guid: b2fbcabf072e2104fb7ec09830d7c596, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8983,6 +9171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_cue (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6207234420530398036, guid: 0fc7c6a0f6dfdcb48b84730cf73c0b10, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 6732695066772150766, guid: 0fc7c6a0f6dfdcb48b84730cf73c0b10, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -9057,6 +9249,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_counterfeit_money_2
       objectReference: {fileID: 0}
+    - target: {fileID: 144554877265685039, guid: ce17f06889b3af34f85671702aaef8cb, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 669452264024895637, guid: ce17f06889b3af34f85671702aaef8cb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.3800001
@@ -9118,6 +9314,10 @@ PrefabInstance:
     - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money_6 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 6902419635221977078, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9215,6 +9415,10 @@ PrefabInstance:
     - target: {fileID: 2792853993513692562, guid: c32795021b2439244a653c16c80134dd, type: 3}
       propertyPath: m_Name
       value: SM_white_chess_piece_5 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2792853993513692562, guid: c32795021b2439244a653c16c80134dd, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 3281405885520967464, guid: c32795021b2439244a653c16c80134dd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9330,6 +9534,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_billiard_ball_11
       objectReference: {fileID: 0}
+    - target: {fileID: 6864827907591409723, guid: c2d4389012d4c244890d7fddfb777d53, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9404,6 +9612,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_billiard_ball_9
       objectReference: {fileID: 0}
+    - target: {fileID: 2961421449492674354, guid: 7fae746744ca9af4ea525c3444ab2266, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9466,6 +9678,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_counterfeit_money
       objectReference: {fileID: 0}
+    - target: {fileID: 3294616549224521466, guid: 4baa6449ec3e32542b347a5768d9fb3c, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9487,6 +9703,10 @@ PrefabInstance:
     - target: {fileID: 2792853993513692562, guid: c32795021b2439244a653c16c80134dd, type: 3}
       propertyPath: m_Name
       value: SM_white_chess_piece_5 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2792853993513692562, guid: c32795021b2439244a653c16c80134dd, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 3281405885520967464, guid: c32795021b2439244a653c16c80134dd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9794,6 +10014,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_counterfeit_money_6
       objectReference: {fileID: 0}
+    - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 6902419635221977078, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.22000027
@@ -9964,6 +10188,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_monopoly_playing_card_2
       objectReference: {fileID: 0}
+    - target: {fileID: 2384676524388179681, guid: e1e865239b35ba34b864f6273ef74a8c, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 3049994706083546203, guid: e1e865239b35ba34b864f6273ef74a8c, type: 3}
       propertyPath: m_LocalScale.z
       value: 1.2
@@ -10024,6 +10252,10 @@ PrefabInstance:
     - target: {fileID: 6984822163492667912, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
       propertyPath: m_Name
       value: SM_pawn (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984822163492667912, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 7756538230453950642, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
       propertyPath: m_LocalScale.x
@@ -10206,6 +10438,10 @@ PrefabInstance:
     - target: {fileID: 8470459714774051563, guid: b2fbcabf072e2104fb7ec09830d7c596, type: 3}
       propertyPath: m_Name
       value: SM_black_chess_piece_5 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470459714774051563, guid: b2fbcabf072e2104fb7ec09830d7c596, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 9135216046228992081, guid: b2fbcabf072e2104fb7ec09830d7c596, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10485,6 +10721,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_black_chess_piece_5 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 8470459714774051563, guid: b2fbcabf072e2104fb7ec09830d7c596, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 9135216046228992081, guid: b2fbcabf072e2104fb7ec09830d7c596, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.068460464
@@ -10654,6 +10894,10 @@ PrefabInstance:
     - target: {fileID: 6984822163492667912, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
       propertyPath: m_Name
       value: SM_pawn (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984822163492667912, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 7756538230453950642, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
       propertyPath: m_LocalScale.x
@@ -10970,6 +11214,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_white_chess_piece_5 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2792853993513692562, guid: c32795021b2439244a653c16c80134dd, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 3281405885520967464, guid: c32795021b2439244a653c16c80134dd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.15938663
@@ -11139,6 +11387,10 @@ PrefabInstance:
     - target: {fileID: 2554497521643782776, guid: 92f628b5cf68aee4e84decd31c0939fa, type: 3}
       propertyPath: m_Name
       value: SM_black_chess_piece_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554497521643782776, guid: 92f628b5cf68aee4e84decd31c0939fa, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 2898265761443338434, guid: 92f628b5cf68aee4e84decd31c0939fa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11358,6 +11610,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_monopoly_playing_card_1
       objectReference: {fileID: 0}
+    - target: {fileID: 2042145389763901229, guid: 69f01c2925faa5c479a4a179a2cbb1aa, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11414,6 +11670,10 @@ PrefabInstance:
     - target: {fileID: 6844363871898079164, guid: a2d8a259a67ec954aaf336f356d59ce4, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money_4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6844363871898079164, guid: a2d8a259a67ec954aaf336f356d59ce4, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11476,6 +11736,10 @@ PrefabInstance:
     - target: {fileID: 2792853993513692562, guid: c32795021b2439244a653c16c80134dd, type: 3}
       propertyPath: m_Name
       value: SM_white_chess_piece_5 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2792853993513692562, guid: c32795021b2439244a653c16c80134dd, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 3281405885520967464, guid: c32795021b2439244a653c16c80134dd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11579,6 +11843,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_monopoly_playing_card_12
       objectReference: {fileID: 0}
+    - target: {fileID: 2284853565422611094, guid: 7f07df79baba10e4db5be78171628ee1, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11648,6 +11916,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_billiard_ball_15
       objectReference: {fileID: 0}
+    - target: {fileID: 3241312604531032541, guid: d36fcd060a7ad9843a2ee00392352887, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11669,6 +11941,10 @@ PrefabInstance:
     - target: {fileID: 144554877265685039, guid: ce17f06889b3af34f85671702aaef8cb, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 144554877265685039, guid: ce17f06889b3af34f85671702aaef8cb, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 669452264024895637, guid: ce17f06889b3af34f85671702aaef8cb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11948,6 +12224,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_counterfeit_money_6 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 6902419635221977078, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.22000027
@@ -12009,6 +12289,10 @@ PrefabInstance:
     - target: {fileID: 1459082648423476086, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
       propertyPath: m_Name
       value: SM_pawn_1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1459082648423476086, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 2266545762341482956, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
       propertyPath: m_LocalScale.x
@@ -12083,6 +12367,10 @@ PrefabInstance:
     - target: {fileID: 1459082648423476086, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
       propertyPath: m_Name
       value: SM_pawn_1 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1459082648423476086, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 2266545762341482956, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
       propertyPath: m_LocalScale.x
@@ -12198,6 +12486,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_counterfeit_money (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3294616549224521466, guid: 4baa6449ec3e32542b347a5768d9fb3c, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12260,6 +12552,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_white_chess_piece_2
       objectReference: {fileID: 0}
+    - target: {fileID: 2227850617454049417, guid: 5ab374e9e786ea843b0603f9273f7d2a, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12281,6 +12577,10 @@ PrefabInstance:
     - target: {fileID: 2393286153793158325, guid: 172f976ecdfccbd49bb4a4c46e34dc3b, type: 3}
       propertyPath: m_Name
       value: SM_billiard_ball_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393286153793158325, guid: 172f976ecdfccbd49bb4a4c46e34dc3b, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 3061737183867299343, guid: 172f976ecdfccbd49bb4a4c46e34dc3b, type: 3}
       propertyPath: m_LocalScale.x
@@ -12464,6 +12764,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_puck
       objectReference: {fileID: 0}
+    - target: {fileID: 6195755896261785707, guid: 424de8c465e228a41a989458ea6a8e66, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 6823076055256359633, guid: 424de8c465e228a41a989458ea6a8e66, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.043945312
@@ -12525,6 +12829,10 @@ PrefabInstance:
     - target: {fileID: 6029480820583434172, guid: 17c8b8f7c9fbea64381af1bb4132af80, type: 3}
       propertyPath: m_Name
       value: SM_billiard_ball_12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6029480820583434172, guid: 17c8b8f7c9fbea64381af1bb4132af80, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 6406041100709551366, guid: 17c8b8f7c9fbea64381af1bb4132af80, type: 3}
       propertyPath: m_LocalScale.x
@@ -12639,6 +12947,10 @@ PrefabInstance:
     - target: {fileID: 3294616549224521466, guid: 4baa6449ec3e32542b347a5768d9fb3c, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3294616549224521466, guid: 4baa6449ec3e32542b347a5768d9fb3c, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12970,6 +13282,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_billiard_ball_13
       objectReference: {fileID: 0}
+    - target: {fileID: 7420989564388243154, guid: 3865c6004c2e33e479a7c4c03fe53e3c, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 7905917534737378408, guid: 3865c6004c2e33e479a7c4c03fe53e3c, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -13044,6 +13360,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_counterfeit_money_2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 144554877265685039, guid: ce17f06889b3af34f85671702aaef8cb, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 669452264024895637, guid: ce17f06889b3af34f85671702aaef8cb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.3800001
@@ -13105,6 +13425,10 @@ PrefabInstance:
     - target: {fileID: 6984822163492667912, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
       propertyPath: m_Name
       value: SM_pawn (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984822163492667912, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 7756538230453950642, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
       propertyPath: m_LocalScale.x
@@ -13287,7 +13611,7 @@ GameObject:
   - component: {fileID: 995389132}
   m_Layer: 0
   m_Name: MonopolyBoard
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13327,6 +13651,10 @@ PrefabInstance:
     - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money_6 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 6902419635221977078, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13390,6 +13718,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_dice
       objectReference: {fileID: 0}
+    - target: {fileID: 7090668375455561899, guid: fc72e8fdf101c704bba60896263d63f3, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 7578658760838586897, guid: fc72e8fdf101c704bba60896263d63f3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.11139774
@@ -13446,6 +13778,10 @@ PrefabInstance:
     - target: {fileID: 144554877265685039, guid: ce17f06889b3af34f85671702aaef8cb, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 144554877265685039, guid: ce17f06889b3af34f85671702aaef8cb, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 669452264024895637, guid: ce17f06889b3af34f85671702aaef8cb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13617,6 +13953,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_counterfeit_money_6 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 6902419635221977078, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.22000027
@@ -13678,6 +14018,10 @@ PrefabInstance:
     - target: {fileID: 2792853993513692562, guid: c32795021b2439244a653c16c80134dd, type: 3}
       propertyPath: m_Name
       value: SM_white_chess_piece_5 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2792853993513692562, guid: c32795021b2439244a653c16c80134dd, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 3281405885520967464, guid: c32795021b2439244a653c16c80134dd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14162,6 +14506,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_counterfeit_money (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3294616549224521466, guid: 4baa6449ec3e32542b347a5768d9fb3c, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14223,6 +14571,10 @@ PrefabInstance:
     - target: {fileID: 3294616549224521466, guid: 4baa6449ec3e32542b347a5768d9fb3c, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3294616549224521466, guid: 4baa6449ec3e32542b347a5768d9fb3c, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14286,6 +14638,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_counterfeit_money (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3294616549224521466, guid: 4baa6449ec3e32542b347a5768d9fb3c, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14307,6 +14663,10 @@ PrefabInstance:
     - target: {fileID: 6984822163492667912, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
       propertyPath: m_Name
       value: SM_pawn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984822163492667912, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 7756538230453950642, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
       propertyPath: m_LocalScale.x
@@ -14655,6 +15015,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_billiard_ball_14
       objectReference: {fileID: 0}
+    - target: {fileID: 6604763103471405331, guid: f9d2886aa3953aa4faeb6fa2df768f54, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14676,7 +15040,7 @@ GameObject:
   - component: {fileID: 1082876302}
   m_Layer: 0
   m_Name: Properties
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14725,7 +15089,7 @@ GameObject:
   - component: {fileID: 1087763562}
   m_Layer: 0
   m_Name: MoneyGroup
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14772,6 +15136,10 @@ PrefabInstance:
     - target: {fileID: 2617121809366402462, guid: fbfbf824ce58cc54c8a7e1b39f1e5bbb, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2617121809366402462, guid: fbfbf824ce58cc54c8a7e1b39f1e5bbb, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 3394081103743950628, guid: fbfbf824ce58cc54c8a7e1b39f1e5bbb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15051,6 +15419,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_counterfeit_money_3
       objectReference: {fileID: 0}
+    - target: {fileID: 2617121809366402462, guid: fbfbf824ce58cc54c8a7e1b39f1e5bbb, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 3394081103743950628, guid: fbfbf824ce58cc54c8a7e1b39f1e5bbb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -15220,6 +15592,10 @@ PrefabInstance:
     - target: {fileID: 6984822163492667912, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
       propertyPath: m_Name
       value: SM_pawn (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984822163492667912, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 7756538230453950642, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
       propertyPath: m_LocalScale.x
@@ -15443,6 +15819,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_counterfeit_money_4
       objectReference: {fileID: 0}
+    - target: {fileID: 6844363871898079164, guid: a2d8a259a67ec954aaf336f356d59ce4, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15659,7 +16039,7 @@ GameObject:
   - component: {fileID: 1145312984}
   m_Layer: 0
   m_Name: MoneyGroup (1)
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15706,6 +16086,10 @@ PrefabInstance:
     - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money_6 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 6902419635221977078, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15990,6 +16374,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_black_chess_piece_5 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8470459714774051563, guid: b2fbcabf072e2104fb7ec09830d7c596, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 9135216046228992081, guid: b2fbcabf072e2104fb7ec09830d7c596, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.11612797
@@ -16267,7 +16655,7 @@ GameObject:
   - component: {fileID: 1167899024}
   m_Layer: 0
   m_Name: MoneyGroup (3)
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16354,6 +16742,10 @@ PrefabInstance:
     - target: {fileID: 8047690619244682326, guid: 9a29f92e394318b4e89800679eb08f68, type: 3}
       propertyPath: m_Name
       value: SM_white_chess_piece
+      objectReference: {fileID: 0}
+    - target: {fileID: 8047690619244682326, guid: 9a29f92e394318b4e89800679eb08f68, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16530,6 +16922,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_monopoly_playing_card
       objectReference: {fileID: 0}
+    - target: {fileID: 4566134861953191172, guid: 851fa61eda9a65f4aa4f3479bf3ee8be, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16546,6 +16942,10 @@ PrefabInstance:
     - target: {fileID: 1217797358973465356, guid: d0a86854561815b4cbaeb215d85e53b0, type: 3}
       propertyPath: m_Name
       value: SM_billiard_ball_7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1217797358973465356, guid: d0a86854561815b4cbaeb215d85e53b0, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 1994439955018279350, guid: d0a86854561815b4cbaeb215d85e53b0, type: 3}
       propertyPath: m_LocalScale.x
@@ -16661,6 +17061,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_counterfeit_money_4 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6844363871898079164, guid: a2d8a259a67ec954aaf336f356d59ce4, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16722,6 +17126,10 @@ PrefabInstance:
     - target: {fileID: 6844363871898079164, guid: a2d8a259a67ec954aaf336f356d59ce4, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money_4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6844363871898079164, guid: a2d8a259a67ec954aaf336f356d59ce4, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16785,6 +17193,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_counterfeit_money
       objectReference: {fileID: 0}
+    - target: {fileID: 3294616549224521466, guid: 4baa6449ec3e32542b347a5768d9fb3c, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16847,6 +17259,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_monopoly_playing_card_9 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 959750697270993369, guid: e6acbb21e598ed649a0311a3c2f992c3, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16863,6 +17279,10 @@ PrefabInstance:
     - target: {fileID: 6984822163492667912, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
       propertyPath: m_Name
       value: SM_pawn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984822163492667912, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 7756538230453950642, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
       propertyPath: m_LocalScale.x
@@ -16937,6 +17357,10 @@ PrefabInstance:
     - target: {fileID: 8470459714774051563, guid: b2fbcabf072e2104fb7ec09830d7c596, type: 3}
       propertyPath: m_Name
       value: SM_black_chess_piece_5 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470459714774051563, guid: b2fbcabf072e2104fb7ec09830d7c596, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 9135216046228992081, guid: b2fbcabf072e2104fb7ec09830d7c596, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17107,6 +17531,10 @@ PrefabInstance:
     - target: {fileID: 1459082648423476086, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
       propertyPath: m_Name
       value: SM_pawn_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1459082648423476086, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 2266545762341482956, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
       propertyPath: m_LocalScale.x
@@ -17290,6 +17718,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_pawn_1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1459082648423476086, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 2266545762341482956, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -17363,6 +17795,10 @@ PrefabInstance:
     - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money_6 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 6902419635221977078, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17755,6 +18191,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_pawn (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6984822163492667912, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 7756538230453950642, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -17829,6 +18269,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_monopoly_playing_card_6 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2495043428404527714, guid: baf88563d8c18614f82954b1728dd89b, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 3020785515793864920, guid: baf88563d8c18614f82954b1728dd89b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.09639835
@@ -17885,6 +18329,10 @@ PrefabInstance:
     - target: {fileID: 8470459714774051563, guid: b2fbcabf072e2104fb7ec09830d7c596, type: 3}
       propertyPath: m_Name
       value: SM_black_chess_piece_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470459714774051563, guid: b2fbcabf072e2104fb7ec09830d7c596, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 9135216046228992081, guid: b2fbcabf072e2104fb7ec09830d7c596, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17947,6 +18395,10 @@ PrefabInstance:
     - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money_6 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 6902419635221977078, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18373,6 +18825,10 @@ PrefabInstance:
     - target: {fileID: 4075289507344095569, guid: ccbaa9a3573af454a9b24d1f30a0d12b, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4075289507344095569, guid: ccbaa9a3573af454a9b24d1f30a0d12b, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19085,6 +19541,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_billiard_ball_1
       objectReference: {fileID: 0}
+    - target: {fileID: 5708037848498837306, guid: 1aec2a03afa408e4b9ea139beccbfb73, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19106,6 +19566,10 @@ PrefabInstance:
     - target: {fileID: 2792853993513692562, guid: c32795021b2439244a653c16c80134dd, type: 3}
       propertyPath: m_Name
       value: SM_white_chess_piece_5 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2792853993513692562, guid: c32795021b2439244a653c16c80134dd, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 3281405885520967464, guid: c32795021b2439244a653c16c80134dd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19316,6 +19780,10 @@ PrefabInstance:
     - target: {fileID: 9006910479056271266, guid: fc9adb26391712a4496c227a72d4c0a9, type: 3}
       propertyPath: m_Name
       value: SM_black_chess_piece_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9006910479056271266, guid: fc9adb26391712a4496c227a72d4c0a9, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19555,6 +20023,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_white_chess_piece_5
       objectReference: {fileID: 0}
+    - target: {fileID: 2792853993513692562, guid: c32795021b2439244a653c16c80134dd, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 3281405885520967464, guid: c32795021b2439244a653c16c80134dd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.20388699
@@ -19616,6 +20088,10 @@ PrefabInstance:
     - target: {fileID: 3962734582610401354, guid: 155b04dddefced24a8ddd58db1d3ef01, type: 3}
       propertyPath: m_Name
       value: SM_white_chess_piece_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962734582610401354, guid: 155b04dddefced24a8ddd58db1d3ef01, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 4446643515850900208, guid: 155b04dddefced24a8ddd58db1d3ef01, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19731,6 +20207,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_billiard_ball_10
       objectReference: {fileID: 0}
+    - target: {fileID: 8991125868428124163, guid: b2491e12e3e22a44d88605bb453dc702, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19752,6 +20232,10 @@ PrefabInstance:
     - target: {fileID: 8470459714774051563, guid: b2fbcabf072e2104fb7ec09830d7c596, type: 3}
       propertyPath: m_Name
       value: SM_black_chess_piece_5 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470459714774051563, guid: b2fbcabf072e2104fb7ec09830d7c596, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 9135216046228992081, guid: b2fbcabf072e2104fb7ec09830d7c596, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19922,6 +20406,10 @@ PrefabInstance:
     - target: {fileID: 6984822163492667912, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
       propertyPath: m_Name
       value: SM_pawn (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984822163492667912, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 7756538230453950642, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
       propertyPath: m_LocalScale.x
@@ -20105,6 +20593,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_monopoly_playing_card_11
       objectReference: {fileID: 0}
+    - target: {fileID: 2396476434574478486, guid: 4078994b6f92afa4d9712e740619740a, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 3029284493150672428, guid: 4078994b6f92afa4d9712e740619740a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.9868865
@@ -20161,6 +20653,10 @@ PrefabInstance:
     - target: {fileID: 6984822163492667912, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
       propertyPath: m_Name
       value: SM_pawn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984822163492667912, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 7756538230453950642, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
       propertyPath: m_LocalScale.x
@@ -20384,6 +20880,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_counterfeit_money (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3294616549224521466, guid: 4baa6449ec3e32542b347a5768d9fb3c, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20514,6 +21014,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_pawn (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6984822163492667912, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 7756538230453950642, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -20587,6 +21091,10 @@ PrefabInstance:
     - target: {fileID: 4837429415178699702, guid: 8073b6d1def335847b4b3bbc94f1d4f5, type: 3}
       propertyPath: m_Name
       value: SM_monopoly_playing_card_10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4837429415178699702, guid: 8073b6d1def335847b4b3bbc94f1d4f5, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 5217931169683790092, guid: 8073b6d1def335847b4b3bbc94f1d4f5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20793,6 +21301,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_black_chess_piece_2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9006910479056271266, guid: fc9adb26391712a4496c227a72d4c0a9, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20963,6 +21475,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_counterfeit_money (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3294616549224521466, guid: 4baa6449ec3e32542b347a5768d9fb3c, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20984,6 +21500,10 @@ PrefabInstance:
     - target: {fileID: 144554877265685039, guid: ce17f06889b3af34f85671702aaef8cb, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 144554877265685039, guid: ce17f06889b3af34f85671702aaef8cb, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 669452264024895637, guid: ce17f06889b3af34f85671702aaef8cb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21195,6 +21715,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_counterfeit_money (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3294616549224521466, guid: 4baa6449ec3e32542b347a5768d9fb3c, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21216,6 +21740,10 @@ PrefabInstance:
     - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money_6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 6902419635221977078, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21767,6 +22295,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_counterfeit_money_2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 144554877265685039, guid: ce17f06889b3af34f85671702aaef8cb, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 669452264024895637, guid: ce17f06889b3af34f85671702aaef8cb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.3800001
@@ -21869,6 +22401,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_counterfeit_money_4
       objectReference: {fileID: 0}
+    - target: {fileID: 6844363871898079164, guid: a2d8a259a67ec954aaf336f356d59ce4, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21890,6 +22426,10 @@ PrefabInstance:
     - target: {fileID: 353457539317972371, guid: 924d478d3a145814082b28102bd2bfd2, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 353457539317972371, guid: 924d478d3a145814082b28102bd2bfd2, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 1129395730923611945, guid: 924d478d3a145814082b28102bd2bfd2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22169,6 +22709,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_pawn (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 6984822163492667912, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 7756538230453950642, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -22351,6 +22895,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_counterfeit_money_1
       objectReference: {fileID: 0}
+    - target: {fileID: 353457539317972371, guid: 924d478d3a145814082b28102bd2bfd2, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 1129395730923611945, guid: 924d478d3a145814082b28102bd2bfd2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.3800001
@@ -22521,6 +23069,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_white_chess_piece_5 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 2792853993513692562, guid: c32795021b2439244a653c16c80134dd, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 3281405885520967464, guid: c32795021b2439244a653c16c80134dd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.06944656
@@ -22582,6 +23134,10 @@ PrefabInstance:
     - target: {fileID: 1459082648423476086, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
       propertyPath: m_Name
       value: SM_pawn_1 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1459082648423476086, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 2266545762341482956, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
       propertyPath: m_LocalScale.x
@@ -22696,6 +23252,10 @@ PrefabInstance:
     - target: {fileID: 6844363871898079164, guid: a2d8a259a67ec954aaf336f356d59ce4, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6844363871898079164, guid: a2d8a259a67ec954aaf336f356d59ce4, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22826,6 +23386,10 @@ PrefabInstance:
     - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money_6 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 6902419635221977078, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23232,6 +23796,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_dice (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7090668375455561899, guid: fc72e8fdf101c704bba60896263d63f3, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 7578658760838586897, guid: fc72e8fdf101c704bba60896263d63f3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.14886093
@@ -23505,6 +24073,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_black_chess_piece_5 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8470459714774051563, guid: b2fbcabf072e2104fb7ec09830d7c596, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 9135216046228992081, guid: b2fbcabf072e2104fb7ec09830d7c596, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.069568634
@@ -23566,6 +24138,10 @@ PrefabInstance:
     - target: {fileID: 4629618438768297234, guid: c3b208063e7b14f438e6c1106777812a, type: 3}
       propertyPath: m_Name
       value: SM_billiard_ball
+      objectReference: {fileID: 0}
+    - target: {fileID: 4629618438768297234, guid: c3b208063e7b14f438e6c1106777812a, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 5437082647368196008, guid: c3b208063e7b14f438e6c1106777812a, type: 3}
       propertyPath: m_LocalScale.x
@@ -23640,6 +24216,10 @@ PrefabInstance:
     - target: {fileID: 8470459714774051563, guid: b2fbcabf072e2104fb7ec09830d7c596, type: 3}
       propertyPath: m_Name
       value: SM_black_chess_piece_5 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470459714774051563, guid: b2fbcabf072e2104fb7ec09830d7c596, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 9135216046228992081, guid: b2fbcabf072e2104fb7ec09830d7c596, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23994,6 +24574,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_counterfeit_money (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3294616549224521466, guid: 4baa6449ec3e32542b347a5768d9fb3c, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24015,6 +24599,10 @@ PrefabInstance:
     - target: {fileID: 6984822163492667912, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
       propertyPath: m_Name
       value: SM_pawn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984822163492667912, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 7756538230453950642, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
       propertyPath: m_LocalScale.x
@@ -24129,6 +24717,10 @@ PrefabInstance:
     - target: {fileID: 3294616549224521466, guid: 4baa6449ec3e32542b347a5768d9fb3c, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money
+      objectReference: {fileID: 0}
+    - target: {fileID: 3294616549224521466, guid: 4baa6449ec3e32542b347a5768d9fb3c, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24270,6 +24862,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_white_chess_piece_1
       objectReference: {fileID: 0}
+    - target: {fileID: 5863339789450773415, guid: 8bd2b7ba8c7674144b8038681841631c, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 6491117346089916701, guid: 8bd2b7ba8c7674144b8038681841631c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.024544716
@@ -24331,6 +24927,10 @@ PrefabInstance:
     - target: {fileID: 5156348926907228684, guid: eba8a96cc2b9eb942a4e1758f493ec43, type: 3}
       propertyPath: m_Name
       value: SM_frame_for_balls
+      objectReference: {fileID: 0}
+    - target: {fileID: 5156348926907228684, guid: eba8a96cc2b9eb942a4e1758f493ec43, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 5531784471620483254, guid: eba8a96cc2b9eb942a4e1758f493ec43, type: 3}
       propertyPath: m_LocalScale.x
@@ -24709,6 +25309,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_counterfeit_money_6 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 6902419635221977078, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.22000027
@@ -24811,6 +25415,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_counterfeit_money (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3294616549224521466, guid: 4baa6449ec3e32542b347a5768d9fb3c, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24837,6 +25445,10 @@ PrefabInstance:
     - target: {fileID: 8470459714774051563, guid: b2fbcabf072e2104fb7ec09830d7c596, type: 3}
       propertyPath: m_Name
       value: SM_black_chess_piece_5 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470459714774051563, guid: b2fbcabf072e2104fb7ec09830d7c596, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 9135216046228992081, guid: b2fbcabf072e2104fb7ec09830d7c596, type: 3}
       propertyPath: m_LocalPosition.x
@@ -25168,6 +25780,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_billiard_ball_6
       objectReference: {fileID: 0}
+    - target: {fileID: 3133893777746538217, guid: 0ed0739a9694e2541a6bf8eaf6137040, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25189,6 +25805,10 @@ PrefabInstance:
     - target: {fileID: 6984822163492667912, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
       propertyPath: m_Name
       value: SM_pawn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984822163492667912, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 7756538230453950642, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
       propertyPath: m_LocalScale.x
@@ -25263,6 +25883,10 @@ PrefabInstance:
     - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money_6 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 6902419635221977078, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -25434,6 +26058,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_hockey_stick_1
       objectReference: {fileID: 0}
+    - target: {fileID: 6957319837144089054, guid: 63ebc3715e8ded4449e9634f0daa5581, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 7766049824670014308, guid: 63ebc3715e8ded4449e9634f0daa5581, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.5894718
@@ -25536,6 +26164,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_monopoly_playing_card_8
       objectReference: {fileID: 0}
+    - target: {fileID: 2066613878870936884, guid: 6a82dd536e33f90468962687b84f87a9, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25593,6 +26225,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_pawn_2
       objectReference: {fileID: 0}
+    - target: {fileID: 4227822390098197314, guid: 0531cfbedffca454bb0c50794a935eba, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25609,6 +26245,10 @@ PrefabInstance:
     - target: {fileID: 2792853993513692562, guid: c32795021b2439244a653c16c80134dd, type: 3}
       propertyPath: m_Name
       value: SM_white_chess_piece_5 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2792853993513692562, guid: c32795021b2439244a653c16c80134dd, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 3281405885520967464, guid: c32795021b2439244a653c16c80134dd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -25855,6 +26495,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_counterfeit_money
       objectReference: {fileID: 0}
+    - target: {fileID: 3294616549224521466, guid: 4baa6449ec3e32542b347a5768d9fb3c, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25876,6 +26520,10 @@ PrefabInstance:
     - target: {fileID: 7100962309810547666, guid: 788a0170185188343a55c326a35edc0b, type: 3}
       propertyPath: m_Name
       value: SM_pawn_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100962309810547666, guid: 788a0170185188343a55c326a35edc0b, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 7620230438291878248, guid: 788a0170185188343a55c326a35edc0b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -25933,6 +26581,10 @@ PrefabInstance:
     - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money_6 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 6902419635221977078, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26030,6 +26682,10 @@ PrefabInstance:
     - target: {fileID: 2792853993513692562, guid: c32795021b2439244a653c16c80134dd, type: 3}
       propertyPath: m_Name
       value: SM_white_chess_piece_5 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2792853993513692562, guid: c32795021b2439244a653c16c80134dd, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 3281405885520967464, guid: c32795021b2439244a653c16c80134dd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26361,6 +27017,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_billiard_ball_5
       objectReference: {fileID: 0}
+    - target: {fileID: 771097213432525519, guid: de024d60e709dda4596b09c606317f7c, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26491,6 +27151,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_black_chess_piece_4 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2554497521643782776, guid: 92f628b5cf68aee4e84decd31c0939fa, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 2898265761443338434, guid: 92f628b5cf68aee4e84decd31c0939fa, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.16260242
@@ -26592,6 +27256,10 @@ PrefabInstance:
     - target: {fileID: 6510667830446519094, guid: 02ab9775d0372d44497bf74037b80ece, type: 3}
       propertyPath: m_Name
       value: SM_pawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 6510667830446519094, guid: 02ab9775d0372d44497bf74037b80ece, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26758,6 +27426,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_hockey_stick
       objectReference: {fileID: 0}
+    - target: {fileID: 2031292089201306920, guid: 60af9dadc4fa2f74cafbaa5902880ba1, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26779,6 +27451,10 @@ PrefabInstance:
     - target: {fileID: 6984822163492667912, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
       propertyPath: m_Name
       value: SM_pawn (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984822163492667912, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 7756538230453950642, guid: 9c230029a36a87749ad0892e7e86aac6, type: 3}
       propertyPath: m_LocalScale.x
@@ -27070,6 +27746,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_white_chess_piece_4 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3962734582610401354, guid: 155b04dddefced24a8ddd58db1d3ef01, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 4446643515850900208, guid: 155b04dddefced24a8ddd58db1d3ef01, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.16207409
@@ -27131,6 +27811,10 @@ PrefabInstance:
     - target: {fileID: 1459082648423476086, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
       propertyPath: m_Name
       value: SM_pawn_1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1459082648423476086, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 2266545762341482956, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
       propertyPath: m_LocalScale.x
@@ -27205,6 +27889,10 @@ PrefabInstance:
     - target: {fileID: 8266982675334039431, guid: 44379194d749de142aa1eb812fa53e66, type: 3}
       propertyPath: m_Name
       value: SM_billiard_ball_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266982675334039431, guid: 44379194d749de142aa1eb812fa53e66, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 8787059837413907773, guid: 44379194d749de142aa1eb812fa53e66, type: 3}
       propertyPath: m_LocalScale.x
@@ -27319,6 +28007,10 @@ PrefabInstance:
     - target: {fileID: 6844363871898079164, guid: a2d8a259a67ec954aaf336f356d59ce4, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6844363871898079164, guid: a2d8a259a67ec954aaf336f356d59ce4, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27558,6 +28250,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_monopoly_playing_card_7
       objectReference: {fileID: 0}
+    - target: {fileID: 5094687611169593863, guid: c28cdc2fc136ec64fb3dbcf8d033fce8, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 5618284305758847165, guid: c28cdc2fc136ec64fb3dbcf8d033fce8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.0868864
@@ -27655,6 +28351,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_counterfeit_money_4 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6844363871898079164, guid: a2d8a259a67ec954aaf336f356d59ce4, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27676,6 +28376,10 @@ PrefabInstance:
     - target: {fileID: 8470459714774051563, guid: b2fbcabf072e2104fb7ec09830d7c596, type: 3}
       propertyPath: m_Name
       value: SM_black_chess_piece_5 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470459714774051563, guid: b2fbcabf072e2104fb7ec09830d7c596, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 9135216046228992081, guid: b2fbcabf072e2104fb7ec09830d7c596, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27852,6 +28556,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_white_chess_piece_5 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2792853993513692562, guid: c32795021b2439244a653c16c80134dd, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 3281405885520967464, guid: c32795021b2439244a653c16c80134dd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.06904125
@@ -27913,6 +28621,10 @@ PrefabInstance:
     - target: {fileID: 6207234420530398036, guid: 0fc7c6a0f6dfdcb48b84730cf73c0b10, type: 3}
       propertyPath: m_Name
       value: SM_cue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6207234420530398036, guid: 0fc7c6a0f6dfdcb48b84730cf73c0b10, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 6732695066772150766, guid: 0fc7c6a0f6dfdcb48b84730cf73c0b10, type: 3}
       propertyPath: m_LocalScale.x
@@ -28028,6 +28740,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_monopoly_playing_card_8 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2066613878870936884, guid: 6a82dd536e33f90468962687b84f87a9, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28085,6 +28801,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_tennis_racket (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6712185274879688812, guid: a64e0f898ab7a8049a8409bcbccc9003, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28116,6 +28836,10 @@ PrefabInstance:
     - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_Name
       value: SM_counterfeit_money_6 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089291910493900108, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 6902419635221977078, guid: 5d2a138b4ee460443af9c8b056ba1fc7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -28219,6 +28943,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_counterfeit_money_5
       objectReference: {fileID: 0}
+    - target: {fileID: 4075289507344095569, guid: ccbaa9a3573af454a9b24d1f30a0d12b, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28240,6 +28968,10 @@ PrefabInstance:
     - target: {fileID: 1459082648423476086, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
       propertyPath: m_Name
       value: SM_pawn_1 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1459082648423476086, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 2266545762341482956, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
       propertyPath: m_LocalScale.x
@@ -28669,6 +29401,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_black_chess_piece_3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7965737210816487567, guid: 4f5a4a896d4abc84d884ee3da26f4f48, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28917,6 +29653,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_pawn_1 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1459082648423476086, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 2266545762341482956, guid: 7273b7b367b66d5408ed21b0a5736271, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -29047,6 +29787,10 @@ PrefabInstance:
     - target: {fileID: 2793468359680611773, guid: 83217b43ceb04ae46807dd4083a92e3b, type: 3}
       propertyPath: m_Name
       value: SM_monopoly_playing_card_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793468359680611773, guid: 83217b43ceb04ae46807dd4083a92e3b, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 3283040568367517447, guid: 83217b43ceb04ae46807dd4083a92e3b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -32177,7 +32921,7 @@ GameObject:
   - component: {fileID: 8376432835307798203}
   m_Layer: 0
   m_Name: SM_air_hockey_table
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -45180,7 +45924,6 @@ GameObject:
   - component: {fileID: 1543797159907899708}
   - component: {fileID: 5695154192510422513}
   - component: {fileID: 5695154192510422515}
-  - component: {fileID: 5695154192510422516}
   m_Layer: 0
   m_Name: TV_Apt_01
   m_TagString: Interactable
@@ -45410,6 +46153,9 @@ GameObject:
   - component: {fileID: 6118149411977513147}
   - component: {fileID: 7168056418211559323}
   - component: {fileID: 5058755271141221962}
+  - component: {fileID: 7168056418211559324}
+  - component: {fileID: 7168056418211559326}
+  - component: {fileID: 7168056418211559325}
   m_Layer: 0
   m_Name: Screen
   m_TagString: Interactable
@@ -48646,23 +49392,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &5695154192510422516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4803286031627699797}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ad48e25025573c47a5561eb0326deb9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicTracks:
-  - {fileID: 8300000, guid: e0042aeb89a628345b0f0ebabb4db95f, type: 3}
-  - {fileID: 8300000, guid: 5ecacb1d89ff2e940969b46fb071cdda, type: 3}
-  - {fileID: 8300000, guid: 10a153a980c722242990266d3843b998, type: 3}
-  loop: 1
 --- !u!1 &5696984651980348517
 GameObject:
   m_ObjectHideFlags: 0
@@ -53477,6 +54206,90 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4849400512988724996}
   m_Mesh: {fileID: -1875780437015597444, guid: 7a1dd57bd8b6ca44cbf5f922801b2975, type: 3}
+--- !u!64 &7168056418211559324
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4849400512988724996}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1875780437015597444, guid: 7a1dd57bd8b6ca44cbf5f922801b2975, type: 3}
+--- !u!114 &7168056418211559325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4849400512988724996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ad48e25025573c47a5561eb0326deb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicTracks:
+  - {fileID: 8300000, guid: 3c170c9096ba3bd4c8283600069713f5, type: 3}
+  - {fileID: 8300000, guid: d65707d0dde556441b074e7e98afff15, type: 3}
+  - {fileID: 8300000, guid: d834da361ac718f40a50b9b24eff160b, type: 3}
+  loop: 1
+--- !u!114 &7168056418211559326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4849400512988724996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7168056418211559325}
+          m_TargetAssemblyTypeName: TVMusicControl, Assembly-CSharp
+          m_MethodName: hoverin
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7168056418211559325}
+          m_TargetAssemblyTypeName: TVMusicControl, Assembly-CSharp
+          m_MethodName: hoverout
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!4 &7170452808598477119
 Transform:
   m_ObjectHideFlags: 0

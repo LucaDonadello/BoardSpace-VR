@@ -67,6 +67,7 @@ public class OutlineEffect : MonoBehaviour
         // No valid object hit or tag doesn't match
         if (lastOutlinedObject != null)
         {
+            Debug.Log("No valid object hit or tag doesn't match");
             lastOutlinedObject.enabled = false;
             lastOutlinedObject = null;
         }
