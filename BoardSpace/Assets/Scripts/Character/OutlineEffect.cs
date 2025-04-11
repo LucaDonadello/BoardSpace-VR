@@ -24,18 +24,13 @@ public class OutlineEffect : MonoBehaviour
         //create grab point 
         grabPoint = new GameObject("GrabPoint");
         grabPoint.transform.SetParent(rayOrigin);
-        grabPoint.transform.localPosition = new Vector3(0f, -0.02f, 4f);
+        grabPoint.transform.localPosition = new Vector3(0f, -0.02f, 2f);
         grabPoint.transform.localRotation = Quaternion.identity;
         grabPosition = grabPoint.transform;
     }
 
     void Update()
     {
-        grabPoint = new GameObject("GrabPoint");
-        grabPoint.transform.SetParent(rayOrigin);
-        grabPoint.transform.localPosition = new Vector3(0f, -0.02f, 4f);
-        grabPoint.transform.localRotation = Quaternion.identity;
-        grabPosition = grabPoint.transform;
         
         //move raycast up so it's more visible
         Vector3 offsetOrigin = rayOrigin.position - rayOrigin.up * 0.02f;
