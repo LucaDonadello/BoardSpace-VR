@@ -19,7 +19,8 @@ public class GrabItemVR : MonoBehaviourPun
         if (!photonView.IsMine) return;
 
         // Handle release first
-        if (isHolding && (Input.GetButtonDown("js0") || Input.GetKeyDown(KeyCode.G)))
+        // Press Y on the controller or G on the keyboard to drop the object
+        if (isHolding && (Input.GetButtonDown("js3") || Input.GetKeyDown(KeyCode.G)))
         {
             DropObject();
             return;
@@ -39,7 +40,8 @@ public class GrabItemVR : MonoBehaviourPun
         lineRenderer.SetPosition(0, startPosition);
         lineRenderer.SetPosition(1, endPosition);
 
-        if (!isHolding && (Input.GetButtonDown("js0") || Input.GetKeyDown(KeyCode.G)))
+        // Press Y on the controller or G on the keyboard to grab the object
+        if (!isHolding && (Input.GetButtonDown("js3") || Input.GetKeyDown(KeyCode.G)))
         {
             GameObject hitObject = hitInfo.collider.gameObject;
 

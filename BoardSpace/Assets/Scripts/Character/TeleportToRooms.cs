@@ -68,7 +68,7 @@ public class TeleportToRooms : MonoBehaviourPun
 
         lineRenderer.SetPosition(0, startPosition);
         lineRenderer.SetPosition(1, endPosition);
-
+        // Press X on the controller or Y on the keyboard to teleport
         if ((Input.GetButtonDown("js2") || Input.GetKeyDown(KeyCode.Y)) && hitInfo.collider != null)
         {
             if (hitInfo.collider.CompareTag("DoorToStudy"))

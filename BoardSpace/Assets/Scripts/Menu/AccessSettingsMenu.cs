@@ -18,7 +18,7 @@ public class AccessSettingsMenu : MonoBehaviourPun
     {
         if (!photonView.IsMine) return;
 
-        if (Input.GetKeyDown(KeyCode.O))
+        if (Input.GetKeyDown(KeyCode.O) || Input.GetKeyDown("js7")) // Press O on the keyboard or OK on the controller
         {
             if (settingsMenuRoot != null)
             {
