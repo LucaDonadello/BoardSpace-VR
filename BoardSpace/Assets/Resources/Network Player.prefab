@@ -530,7 +530,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   cameraObj: {fileID: 6020063306420109562}
-  joyStickMode: 1
+  joyStickMode: 0
 --- !u!120 &7675724426238331114
 LineRenderer:
   serializedVersion: 2

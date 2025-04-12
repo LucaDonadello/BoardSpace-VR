@@ -18,6 +18,7 @@ public class SettingsMenuManager : MonoBehaviourPun
 
     private GameObject player;
     private MonoBehaviour[] componentsToDisable;
+    private LineRenderer lineRenderer;
 
     void Start()
     {
@@ -34,11 +35,13 @@ public class SettingsMenuManager : MonoBehaviourPun
             player.GetComponent<TeleportToRooms>(),
             player.GetComponent<SitOnSofa>()
         };
+        lineRenderer = player.GetComponent<LineRenderer>();
     }
 
     void Update()
     {
         if (!photonView.IsMine) return;
+
         DisablePlayerControls();
         float v = Input.GetAxis("Vertical");
         float h = Input.GetAxis("Horizontal");
@@ -81,7 +84,7 @@ public class SettingsMenuManager : MonoBehaviourPun
             horizontalInUse = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.B) || Input.GetButtonDown("Submit"))
+        if (Input.GetKeyDown(KeyCode.B) || Input.GetButtonDown("js10")) // Press A on the controller
         {
             ActivateCurrentButton();
         }
@@ -93,6 +96,10 @@ public class SettingsMenuManager : MonoBehaviourPun
         {
             if (comp != null) comp.enabled = false;
         }
+        if (lineRenderer != null)
+        {
+            lineRenderer.enabled = false;
+        }
     }
 
     void EnablePlayerControls()
@@ -100,6 +107,10 @@ public class SettingsMenuManager : MonoBehaviourPun
         foreach (var comp in componentsToDisable)
         {
             if (comp != null) comp.enabled = true;
+        }
+        if (lineRenderer != null)
+        {
+            lineRenderer.enabled = true;
         }
     }
 
@@ -145,6 +156,8 @@ public class SettingsMenuManager : MonoBehaviourPun
 
     void SetRayLength(float length)
     {
+        lineRenderer.SetPosition(1, player.transform.position + player.transform.forward * length);
+
         // TODO: Set the ray length for the components that need it
         // Teleport teleport = player.GetComponent<Teleport>();
         // if (teleport != null)
@@ -190,6 +203,9 @@ public class SettingsMenuManager : MonoBehaviourPun
                 break;
 
             case "QuitButton":
+                EnablePlayerControls();
+                gameObject.SetActive(false);
+                PhotonNetwork.LeaveRoom();
 #if UNITY_EDITOR
                 UnityEditor.EditorApplication.isPlaying = false;
 #else

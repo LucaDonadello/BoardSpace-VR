@@ -48,6 +48,7 @@ public class SitOnSofa : MonoBehaviourPun
         lineRenderer.SetPosition(1, endPosition);
 
         // Sit or stand
+        // Press Y on the keyboard or X on the controller to sit or stand up
         if ((Input.GetKeyDown(KeyCode.Y) || Input.GetButtonDown("js2")) && hitInfo.collider != null)
         {
             Transform hitTransform = hitInfo.transform;

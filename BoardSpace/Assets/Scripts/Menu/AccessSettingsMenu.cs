@@ -1,6 +1,7 @@
 using UnityEngine;
+using Photon.Pun;
 
-public class AccessSettingsMenu : MonoBehaviour
+public class AccessSettingsMenu : MonoBehaviourPun
 {
     public GameObject settingsMenuRoot;
 
@@ -15,7 +16,9 @@ public class AccessSettingsMenu : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.O))
+        if (!photonView.IsMine) return;
+
+        if (Input.GetKeyDown(KeyCode.O) || Input.GetButtonDown("js7")) // Press O on the keyboard or OK on the controller
         {
             if (settingsMenuRoot != null)
             {
