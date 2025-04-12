@@ -15,7 +15,7 @@ public class OutlineEffect : MonoBehaviour
     void Update()
     {
         Ray ray = new Ray(rayOrigin.position, Camera.main.transform.forward);
-        
+
         if (Physics.Raycast(ray, out RaycastHit hitInfo, maxDistance))
         {
             Collider hitCollider = hitInfo.collider;
