@@ -39,6 +39,7 @@ public class SettingsMenuManager : MonoBehaviourPun
     void Update()
     {
         if (!photonView.IsMine) return;
+
         DisablePlayerControls();
         float v = Input.GetAxis("Vertical");
         float h = Input.GetAxis("Horizontal");

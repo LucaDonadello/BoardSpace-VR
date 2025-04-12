@@ -1,7 +1,8 @@
 using UnityEngine;
 using System.Collections.Generic;
+using Photon.Pun;
 
-public class OutlineEffect : MonoBehaviour
+public class OutlineEffect : MonoBehaviourPun
 {
     [Header("Raycast Settings")]
     public Transform rayOrigin;
@@ -14,6 +15,7 @@ public class OutlineEffect : MonoBehaviour
 
     void Update()
     {
+        if (!photonView.IsMine) return;
         Ray ray = new Ray(rayOrigin.position, Camera.main.transform.forward);
 
         if (Physics.Raycast(ray, out RaycastHit hitInfo, maxDistance))
