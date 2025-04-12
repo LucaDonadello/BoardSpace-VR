@@ -31,12 +31,12 @@ public class CharacterMovement : MonoBehaviourPun
         {
             // Get horizontal and vertical inputs for movement (Keyboard or Joystick)
             float horComp = Input.GetAxis("Horizontal") * -1; // Left/Right (A/D or Left Stick)
-            float vertComp = Input.GetAxis("Vertical") * -1; // Forward/Backward (W/S or Up/Down Stick)
+            float vertComp = Input.GetAxis("Vertical"); // Forward/Backward (W/S or Up/Down Stick)
 
             // If using joystick mode, adjust the axes as needed
             if (joyStickMode)
             {
-                horComp = Input.GetAxis("Vertical") * -1;   // Joystick Forward/Backward
+                horComp = Input.GetAxis("Vertical");   // Joystick Forward/Backward
                 vertComp = Input.GetAxis("Horizontal") * -1;  // Joystick Left/Right (reverse axis for correct direction)
             }
 
