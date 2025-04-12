@@ -190,6 +190,9 @@ public class SettingsMenuManager : MonoBehaviourPun
                 break;
 
             case "QuitButton":
+                EnablePlayerControls();
+                gameObject.SetActive(false);
+                PhotonNetwork.LeaveRoom();
 #if UNITY_EDITOR
                 UnityEditor.EditorApplication.isPlaying = false;
 #else
