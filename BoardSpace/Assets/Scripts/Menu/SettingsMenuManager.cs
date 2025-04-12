@@ -82,7 +82,7 @@ public class SettingsMenuManager : MonoBehaviourPun
             horizontalInUse = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown("js10")) // Press A on the controller
+        if (Input.GetKeyDown(KeyCode.B) || Input.GetButtonDown("js10")) // Press A on the controller
         {
             ActivateCurrentButton();
         }
