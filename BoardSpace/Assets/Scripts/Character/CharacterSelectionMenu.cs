@@ -9,6 +9,8 @@ public class CharacterSelectionMenu : MonoBehaviour
     public TextMeshProUGUI characterNameText;
     public GameObject player;
     private GameObject currentPlayerInstance;
+    private Transform cam;
+    private CharacterController playerController;
     private CharacterMovement playerMovement;
     private Teleport playerTeleport;
     private TeleportToRooms playerTeleportToRooms;
@@ -19,8 +21,10 @@ public class CharacterSelectionMenu : MonoBehaviour
         UpdateCharacterDisplay();
         player = GameObject.FindGameObjectWithTag("Player");
         playerMovement = player.GetComponent<CharacterMovement>();
+        playerController = player.GetComponent<CharacterController>();
         playerTeleport = player.GetComponent<Teleport>();
         playerTeleportToRooms = player.GetComponent<TeleportToRooms>();
+        cam = player.transform.Find("XRCardboardRig/HeightOffset/Main Camera");
     }
 
     void Update()
@@ -30,6 +34,7 @@ public class CharacterSelectionMenu : MonoBehaviour
         if (gameObject.activeSelf)
         {
             DisablePlayerControls();
+            UpdateMenuOrientation();
         }
     }
 
@@ -38,6 +43,7 @@ public class CharacterSelectionMenu : MonoBehaviour
         playerMovement.enabled = false;
         playerTeleport.enabled = false;
         playerTeleportToRooms.enabled = false;
+        playerController.enabled = false;
     }
 
     public void EnablePlayerControls()
@@ -45,6 +51,7 @@ public class CharacterSelectionMenu : MonoBehaviour
         playerMovement.enabled = true;
         playerTeleport.enabled = true;
         playerTeleportToRooms.enabled = true;
+        playerController.enabled = true;
     }
 
     public void NextCharacter()
@@ -73,15 +80,24 @@ public class CharacterSelectionMenu : MonoBehaviour
         {
             Destroy(currentPlayerInstance); // Destroy the previous instance if it exists
         }
-        Transform cam = player.transform.Find("XRCardboardRig/HeightOffset/Main Camera");
         currentPlayerInstance = Instantiate(selectedCharacterData.characterPrefab, cam);
         currentPlayerInstance.transform.localRotation = Quaternion.identity;
         currentPlayerInstance.transform.localPosition = new Vector3(0, -2.5f, 0);
+        ExitMenu();
     }
 
     public void ExitMenu()
     {
         gameObject.SetActive(false);
         EnablePlayerControls();
+    }
+
+    void UpdateMenuOrientation()
+    {
+        Vector3 targetPosition = cam.position + cam.forward * 5f;
+        targetPosition.y = 2.5f; // always 5 units above ground level (y = 0)
+        transform.position = targetPosition;
+        transform.LookAt(cam);
+        transform.Rotate(0, 180f, 0);
     }
 }
