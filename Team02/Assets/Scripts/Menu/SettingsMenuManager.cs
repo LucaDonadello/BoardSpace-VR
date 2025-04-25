@@ -17,6 +17,7 @@ public class SettingsMenuManager : MonoBehaviourPun
     private bool horizontalInUse = false;
 
     private GameObject player;
+    private GameObject characterSelection;
     private MonoBehaviour[] componentsToDisable;
     private LineRenderer lineRenderer;
 
@@ -36,6 +37,7 @@ public class SettingsMenuManager : MonoBehaviourPun
             player.GetComponent<SitOnSofa>()
         };
         lineRenderer = player.GetComponent<LineRenderer>();
+        characterSelection = player.transform.Find("CharacterSelection").gameObject;
     }
 
     void Update()
@@ -197,6 +199,12 @@ public class SettingsMenuManager : MonoBehaviourPun
 
         switch (btnName)
         {
+            case "SkinSelectionButton":
+                characterSelection.SetActive(true);
+                EnablePlayerControls();
+                gameObject.SetActive(false);
+                break;
+
             case "ResumeButton":
                 EnablePlayerControls();
                 gameObject.SetActive(false);
