@@ -161,10 +161,11 @@ public class CharacterSelectionMenu : MonoBehaviourPun
             characterSkin.GetComponent<PhotonView>().ViewID
         );
 
-        if (defaultSkin.activeSelf)
-        {
-            defaultSkin.SetActive(false); // Hide the default skin
-        }
+        photonView.RPC(
+            "DisableDefaultSkin",
+            RpcTarget.AllBuffered,
+            defaultSkin.GetComponent<PhotonView>().ViewID
+        );
 
         ExitMenu();
 

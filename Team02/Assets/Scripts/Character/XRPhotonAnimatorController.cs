@@ -100,10 +100,10 @@ public class XRPhotonAnimatorController : MonoBehaviourPun
     {
         if (child.gameObject.activeSelf && child != lastActiveModel)
         {
-            modelTransform = child;
-            animator = child.GetComponent<Animator>();
-            lastActiveModel = child;
-            break;
+          modelTransform = child;
+          animator = child.GetComponent<Animator>();
+          lastActiveModel = child;
+          break;
         }
     }
   }
@@ -116,9 +116,20 @@ public class XRPhotonAnimatorController : MonoBehaviourPun
 
       if (skinView != null && parentView != null)
       {
-          skinView.transform.SetParent(parentView.transform, true);
-          skinView.transform.localPosition = Vector3.zero;
-          skinView.transform.localRotation = Quaternion.identity;
+        skinView.transform.SetParent(parentView.transform, true);
+        skinView.transform.localPosition = Vector3.zero;
+        skinView.transform.localRotation = Quaternion.identity;
       }
+  }
+
+  [PunRPC]
+  public void DisableDefaultSkin(int defaultSkinViewID)
+  {
+    PhotonView defaultSkinPhotonView = PhotonView.Find(defaultSkinViewID);
+
+    if (defaultSkinPhotonView != null && defaultSkinPhotonView.gameObject.activeSelf)
+    {
+        defaultSkinPhotonView.gameObject.SetActive(false);
+    }
   }
 }
