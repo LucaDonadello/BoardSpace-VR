@@ -1,8 +1,10 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Photon.Pun;
+using Photon.Realtime;
 
-public class CharacterSelectionMenu : MonoBehaviour
+public class CharacterSelectionMenu : MonoBehaviourPun
 {
     public CharacterData[] characters; // Assign in Inspector
     public Image displayer;
@@ -20,6 +22,7 @@ public class CharacterSelectionMenu : MonoBehaviour
 
     void Start()
     {
+        if (!photonView.IsMine) return;
         UpdateCharacterDisplay();
         player = GameObject.FindGameObjectWithTag("Player");
         playerMovement = player.GetComponent<CharacterMovement>();
@@ -33,6 +36,7 @@ public class CharacterSelectionMenu : MonoBehaviour
 
     void Update()
     {
+        if (!photonView.IsMine) return;
         // If character Selection is active, disable
         // player movement and other controls
         if (gameObject.activeSelf)
