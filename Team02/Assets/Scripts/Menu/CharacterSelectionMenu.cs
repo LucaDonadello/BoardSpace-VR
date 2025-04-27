@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using TMPro;
 using Photon.Pun;
 using Photon.Realtime;
+using ExitGames.Client.Photon;
 
 public class CharacterSelectionMenu : MonoBehaviourPun
 {
@@ -58,6 +59,17 @@ public class CharacterSelectionMenu : MonoBehaviourPun
         rightArrowOriginalColor = rightArrowButton.GetComponent<Image>().color;
         selectButtonOriginalColor = selectButton.GetComponent<Image>().color;
         exitButtonOriginalColor = exitButton.GetComponent<Image>().color;
+
+        // Try to restore skin if any
+        if (PhotonNetwork.LocalPlayer.CustomProperties.ContainsKey("SelectedSkin"))
+        {
+            string skinName = PhotonNetwork.LocalPlayer.CustomProperties["SelectedSkin"] as string;
+
+            if (!string.IsNullOrEmpty(skinName))
+            {
+                RestoreSelectedSkin(skinName);
+            }
+        }
 
         UpdateButtonHighlights();
     }
@@ -119,22 +131,87 @@ public class CharacterSelectionMenu : MonoBehaviourPun
 
     public void SelectCharacter()
     {
-        // Instantiate the selected character prefab in the game world
+        if (!photonView.IsMine) return;
+
         CharacterData selectedCharacterData = characters[currentCharacterIndex];
+
         if (currentPlayerInstance != null)
         {
             PhotonNetwork.Destroy(currentPlayerInstance); // Destroy the previous instance if it exists
         }
+
         currentPlayerInstance = PhotonNetwork.Instantiate(
             selectedCharacterData.characterPrefab.name,
             characterSkin.transform.position,
-            Quaternion.identity);
+            Quaternion.identity
+        );
+
         currentPlayerInstance.transform.SetParent(characterSkin.transform, false); // Set the parent to the character skin
+
+        // Locally parent it so it looks good immediately
+        currentPlayerInstance.transform.SetParent(characterSkin.transform, true);
+        currentPlayerInstance.transform.localPosition = Vector3.zero;
+        currentPlayerInstance.transform.localRotation = Quaternion.identity;
+
+        // Then notify everyone including yourself
+        photonView.RPC(
+            "SetParentToCharacterSkin",
+            RpcTarget.AllBuffered,
+            currentPlayerInstance.GetComponent<PhotonView>().ViewID,
+            characterSkin.GetComponent<PhotonView>().ViewID
+        );
+
         if (defaultSkin.activeSelf)
         {
             defaultSkin.SetActive(false); // Hide the default skin
         }
+
         ExitMenu();
+
+        // Save selected skin name in Custom Properties
+        Hashtable playerProperties = new Hashtable();
+        playerProperties["SelectedSkin"] = selectedCharacterData.characterPrefab.name;
+        PhotonNetwork.LocalPlayer.SetCustomProperties(playerProperties);
+    }
+
+    [PunRPC]
+    void SetParentToCharacterSkin(int skinViewID, int parentViewID)
+    {
+        PhotonView skinView = PhotonView.Find(skinViewID);
+        PhotonView parentView = PhotonView.Find(parentViewID);
+
+        if (skinView != null && parentView != null)
+        {
+            skinView.transform.SetParent(parentView.transform, true);
+            skinView.transform.localPosition = Vector3.zero;
+            skinView.transform.localRotation = Quaternion.identity;
+        }
+    }
+
+    void RestoreSelectedSkin(string prefabName)
+    {
+        if (currentPlayerInstance != null)
+        {
+            PhotonNetwork.Destroy(currentPlayerInstance);
+        }
+
+        currentPlayerInstance = PhotonNetwork.Instantiate(
+            prefabName,
+            characterSkin.transform.position,
+            Quaternion.identity
+        );
+
+        currentPlayerInstance.transform.SetParent(characterSkin.transform, true);
+        currentPlayerInstance.transform.localPosition = Vector3.zero;
+        currentPlayerInstance.transform.localRotation = Quaternion.identity;
+
+        // Send parent sync to others
+        photonView.RPC(
+            "SetParentToCharacterSkin",
+            RpcTarget.AllBuffered,
+            currentPlayerInstance.GetComponent<PhotonView>().ViewID,
+            characterSkin.GetComponent<PhotonView>().ViewID
+        );
     }
 
     void HandleMenuNavigation()
