@@ -7,7 +7,7 @@ public class RotateWithCam : MonoBehaviourPun
     {
         if (!photonView.IsMine) return;
 
-        // Rotate the object to match the camera's rotation in y direction only
-        transform.rotation = Quaternion.Euler(0, Camera.main.transform.rotation.eulerAngles.y, 0);
+        Quaternion targetRotation = Quaternion.Euler(0, Camera.main.transform.rotation.eulerAngles.y, 0);
+        transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * 5f); // 5f = smoothing speed
     }
 }
