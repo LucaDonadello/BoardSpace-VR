@@ -107,4 +107,18 @@ public class XRPhotonAnimatorController : MonoBehaviourPun
         }
     }
   }
+
+  [PunRPC]
+  public void SetParentToCharacterSkin(int skinViewID, int parentViewID)
+  {
+      PhotonView skinView = PhotonView.Find(skinViewID);
+      PhotonView parentView = PhotonView.Find(parentViewID);
+
+      if (skinView != null && parentView != null)
+      {
+          skinView.transform.SetParent(parentView.transform, true);
+          skinView.transform.localPosition = Vector3.zero;
+          skinView.transform.localRotation = Quaternion.identity;
+      }
+  }
 }
