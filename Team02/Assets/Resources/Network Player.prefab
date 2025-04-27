@@ -4016,6 +4016,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2044217517932629054}
   - component: {fileID: 8706808285311313595}
+  - component: {fileID: 7493494959466904606}
   m_Layer: 0
   m_Name: CharacterSkin
   m_TagString: Untagged
@@ -4051,6 +4052,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e77866e528e4064ab569d124b80fce6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7493494959466904606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6681708351741432047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 0
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &6756560901129330511
 GameObject:
   m_ObjectHideFlags: 0
