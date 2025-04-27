@@ -4017,6 +4017,7 @@ GameObject:
   - component: {fileID: 2044217517932629054}
   - component: {fileID: 8706808285311313595}
   - component: {fileID: 7493494959466904606}
+  - component: {fileID: 4963468559067062800}
   m_Layer: 0
   m_Name: CharacterSkin
   m_TagString: Untagged
@@ -4070,10 +4071,27 @@ MonoBehaviour:
   Synchronization: 0
   OwnershipTransfer: 0
   observableSearch: 2
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: 4963468559067062800}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &4963468559067062800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6681708351741432047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &6756560901129330511
 GameObject:
   m_ObjectHideFlags: 0
@@ -5570,6 +5588,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fadead254b8bb1b4e9406290a47642e6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 984980957331272169}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fadead254b8bb1b4e9406290a47642e6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 866772879236510366}
   m_SourcePrefab: {fileID: 100100000, guid: fadead254b8bb1b4e9406290a47642e6, type: 3}
 --- !u!1 &4950204184178698446 stripped
 GameObject:
@@ -5594,10 +5615,27 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 0
   observableSearch: 2
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: 866772879236510366}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &866772879236510366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4950204184178698446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowLayerWeightsInspector: 1
+  ShowParameterInspector: 1
+  m_SynchronizeParameters: []
+  m_SynchronizeLayers: []
 --- !u!4 &5762770062762046068 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fadead254b8bb1b4e9406290a47642e6, type: 3}
