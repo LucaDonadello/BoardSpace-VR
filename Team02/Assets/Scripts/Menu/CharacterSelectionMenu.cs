@@ -22,6 +22,9 @@ public class CharacterSelectionMenu : MonoBehaviourPun
     private TeleportToRooms playerTeleportToRooms;
     private int currentCharacterIndex = 0;
 
+    private MonoBehaviour[] componentsToDisable;
+    private LineRenderer lineRenderer;
+
     private Button leftArrowButton;
     private Button rightArrowButton;
     private Button selectButton;
@@ -42,10 +45,15 @@ public class CharacterSelectionMenu : MonoBehaviourPun
         UpdateCharacterDisplay();
         player = GameObject.FindGameObjectWithTag("Player");
         if (player == null) return;
-        playerMovement = player.GetComponent<CharacterMovement>();
-        playerController = player.GetComponent<CharacterController>();
-        playerTeleport = player.GetComponent<Teleport>();
-        playerTeleportToRooms = player.GetComponent<TeleportToRooms>();
+        componentsToDisable = new MonoBehaviour[]
+        {
+            player.GetComponent<CharacterMovement>(),
+            player.GetComponent<Teleport>(),
+            player.GetComponent<TeleportToRooms>(),
+            player.GetComponent<SitOnSofa>()
+        };
+        lineRenderer = player.GetComponent<LineRenderer>();
+
         cam = player.transform.Find("XRCardboardRig/HeightOffset/Main Camera");
         characterSkin = player.transform.Find("CharacterSkin").gameObject;
         defaultSkin = characterSkin.transform.Find("DefaultBro").gameObject;
@@ -89,18 +97,26 @@ public class CharacterSelectionMenu : MonoBehaviourPun
 
     void DisablePlayerControls()
     {
-        playerMovement.enabled = false;
-        playerTeleport.enabled = false;
-        playerTeleportToRooms.enabled = false;
-        playerController.enabled = false;
+        foreach (var comp in componentsToDisable)
+        {
+            if (comp != null) comp.enabled = false;
+        }
+        if (lineRenderer != null)
+        {
+            lineRenderer.enabled = false;
+        }
     }
 
-    public void EnablePlayerControls()
+    void EnablePlayerControls()
     {
-        playerMovement.enabled = true;
-        playerTeleport.enabled = true;
-        playerTeleportToRooms.enabled = true;
-        playerController.enabled = true;
+        foreach (var comp in componentsToDisable)
+        {
+            if (comp != null) comp.enabled = true;
+        }
+        if (lineRenderer != null)
+        {
+            lineRenderer.enabled = true;
+        }
     }
 
     public void NextCharacter()
@@ -246,7 +262,7 @@ public class CharacterSelectionMenu : MonoBehaviourPun
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.B) || Input.GetButtonDown("js10"))
+        if (Input.GetKeyDown(KeyCode.B) || Input.GetButtonDown("js10")) // Press A on the controller
         {
             switch (selectedOption)
             {
