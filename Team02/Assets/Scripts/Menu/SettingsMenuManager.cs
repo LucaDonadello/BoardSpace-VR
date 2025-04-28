@@ -207,6 +207,8 @@ public class SettingsMenuManager : MonoBehaviourPun
 
             case "ResumeButton":
                 EnablePlayerControls();
+                selectedIndex = 0; // Reset selection index
+                HighlightSelectedButton();
                 gameObject.SetActive(false);
                 break;
 
