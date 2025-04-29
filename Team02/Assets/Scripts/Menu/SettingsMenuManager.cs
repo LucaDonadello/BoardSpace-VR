@@ -21,6 +21,8 @@ public class SettingsMenuManager : MonoBehaviourPun
     private MonoBehaviour[] componentsToDisable;
     private LineRenderer lineRenderer;
 
+    private PlayerData playerData;
+
     void Start()
     {
         if (!photonView.IsMine) return;
@@ -28,6 +30,7 @@ public class SettingsMenuManager : MonoBehaviourPun
         HighlightSelectedButton();
 
         player = GameObject.FindGameObjectWithTag("Player");
+        playerData = player.GetComponent<PlayerData>();
 
         componentsToDisable = new MonoBehaviour[]
         {
@@ -36,7 +39,6 @@ public class SettingsMenuManager : MonoBehaviourPun
             player.GetComponent<TeleportToRooms>(),
             player.GetComponent<SitOnSofa>()
         };
-        lineRenderer = player.GetComponent<LineRenderer>();
         characterSelection = player.transform.Find("CharacterSelection").gameObject;
     }
 
@@ -98,10 +100,6 @@ public class SettingsMenuManager : MonoBehaviourPun
         {
             if (comp != null) comp.enabled = false;
         }
-        if (lineRenderer != null)
-        {
-            lineRenderer.enabled = false;
-        }
     }
 
     void EnablePlayerControls()
@@ -109,10 +107,6 @@ public class SettingsMenuManager : MonoBehaviourPun
         foreach (var comp in componentsToDisable)
         {
             if (comp != null) comp.enabled = true;
-        }
-        if (lineRenderer != null)
-        {
-            lineRenderer.enabled = true;
         }
     }
 
@@ -158,39 +152,7 @@ public class SettingsMenuManager : MonoBehaviourPun
 
     void SetRayLength(float length)
     {
-        lineRenderer.SetPosition(1, player.transform.position + player.transform.forward * length);
-
-        // TODO: Set the ray length for the components that need it
-        // Teleport teleport = player.GetComponent<Teleport>();
-        // if (teleport != null)
-        // {
-        //     teleport.maxDistance = length;
-        // }
-        // TeleportToRooms teleportToRooms = player.GetComponent<TeleportToRooms>();
-        // if (teleportToRooms != null)
-        // {
-        //     teleportToRooms.maxDistance = length;
-        // }
-        OutlineEffect outline = player.GetComponent<OutlineEffect>();
-        if (outline != null)
-        {
-            outline.maxDistance = length;
-        }
-        SitOnSofa sitOnSofa = player.GetComponent<SitOnSofa>();
-        if (sitOnSofa != null)
-        {
-            sitOnSofa.maxDistance = length;
-        }
-        PlayerMusicInteraction tvMusic = player.GetComponent<PlayerMusicInteraction>();
-        if (tvMusic != null)
-        {
-            tvMusic.maxDistance = length;
-        }
-        // GrabItemVR grabItemVR = player.GetComponent<GrabItemVR>();
-        // if (grabItemVR != null)
-        // {
-        //     grabItemVR.maxDistance = length;
-        // }
+        playerData.playerRayLenght = length;
     }
 
     void ActivateCurrentButton()
