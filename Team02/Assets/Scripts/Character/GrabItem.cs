@@ -14,6 +14,13 @@ public class GrabItemVR : MonoBehaviourPun
 
     private bool isHolding = false;
 
+    private PlayerData playerData;
+
+    void Start()
+    {
+        playerData = player.GetComponent<PlayerData>();
+    }
+
     void Update()
     {
         if (!photonView.IsMine) return;
@@ -26,8 +33,8 @@ public class GrabItemVR : MonoBehaviourPun
             return;
         }
 
-        float maxDistance = 10;
-        Vector3 startPosition = player.position;
+        float maxDistance = playerData.playerRayLenght;
+        Vector3 startPosition = cameraTransform.position;
         Vector3 direction = cameraTransform.forward;
         Vector3 endPosition = startPosition + direction * maxDistance;
         RaycastHit hitInfo;

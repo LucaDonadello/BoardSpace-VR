@@ -6,11 +6,15 @@ public class LightOnOff : MonoBehaviour
     public Transform player;
     public Transform cameraTransform;
     public string InteractableTag = "Interactable";  // The tag for interactable objects (e.g., TVs, Lamps)
-    public float maxDistance = 10f;  // Maximum distance for raycast
+    public float maxDistance;  // Maximum distance for raycast
     public LayerMask hitLayers;  // Layers to interact with
+
+    private PlayerData playerData;  // Reference to PlayerData script
 
     void Start()
     {
+        playerData = player.GetComponent<PlayerData>();  // Get PlayerData component from the player
+        maxDistance = playerData.playerRayLenght;  // Set max distance from PlayerData
         // Ensure the LineRenderer is set up
         if (lineRenderer == null)
         {
@@ -20,7 +24,7 @@ public class LightOnOff : MonoBehaviour
 
     void Update()
     {
-        Vector3 startPosition = player.position;
+        Vector3 startPosition = cameraTransform.position;
         Vector3 direction = cameraTransform.forward;
         Vector3 endPosition = startPosition + direction * maxDistance;
 

@@ -11,8 +11,11 @@ public class TeleportToRooms : MonoBehaviourPun
 
     private CharacterController characterController;
 
+    private PlayerData playerData;
+
     void Start()
     {
+        playerData = player.GetComponent<PlayerData>();
         if (lineRenderer == null)
         {
             lineRenderer = GetComponent<LineRenderer>();
@@ -55,8 +58,8 @@ public class TeleportToRooms : MonoBehaviourPun
             return;
         }
 
-        float maxDistance = 10;
-        Vector3 startPosition = player.position;
+        float maxDistance = playerData.playerRayLenght;
+        Vector3 startPosition = cameraTransform.position;
         Vector3 direction = cameraTransform.forward;
         Vector3 endPosition = startPosition + direction * maxDistance;
         RaycastHit hitInfo;

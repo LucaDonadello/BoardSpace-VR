@@ -6,12 +6,21 @@ public class OutlineEffect : MonoBehaviourPun
 {
     [Header("Raycast Settings")]
     public Transform rayOrigin;
+    public Transform player;
     public float maxDistance = 10f;
 
     [Header("Tags to Outline (partial match allowed)")]
     public List<string> targetTags = new List<string> { "Door", "Grabbable", "Interactable",};
 
     private Outline lastOutlinedObject = null;
+
+    public PlayerData playerData;
+
+    void Start()
+    {
+        playerData = player.GetComponent<PlayerData>();
+        maxDistance = playerData.playerRayLenght;
+    }
 
     void Update()
     {

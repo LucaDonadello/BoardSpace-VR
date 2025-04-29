@@ -8,7 +8,7 @@ public class SitOnSofa : MonoBehaviourPun
     public Transform cameraTransform;
     public string sofaKeyword = "Sofa";
     public float sitHeightOffset = 0.3f;
-    public float maxDistance = 5f;
+
     public LayerMask interactableLayers;
 
     private CharacterController characterController;
@@ -16,8 +16,16 @@ public class SitOnSofa : MonoBehaviourPun
     private Transform currentSofa = null;
     public CharacterMovement characterMovementScript;
 
+    private PlayerData playerData;
+
+    public float maxDistance;
+    
+
     void Start()
     {
+        playerData = player.GetComponent<PlayerData>();
+        maxDistance = playerData.playerRayLenght;
+        
         if (lineRenderer == null)
         {
             lineRenderer = GetComponent<LineRenderer>();
@@ -34,7 +42,7 @@ public class SitOnSofa : MonoBehaviourPun
     {
         if (!photonView.IsMine) return;
 
-        Vector3 startPosition = player.position;
+        Vector3 startPosition = cameraTransform.position;
         Vector3 direction = cameraTransform.forward;
         Vector3 endPosition = startPosition + direction * maxDistance;
 
