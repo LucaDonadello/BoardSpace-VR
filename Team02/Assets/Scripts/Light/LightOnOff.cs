@@ -18,6 +18,7 @@ public class LightOnOff : MonoBehaviour
 
     void Update()
     {
+        float maxDistance = playerData.playerRayLength;
         Vector3 startPosition = cameraTransform.position;
         Vector3 direction = cameraTransform.forward;
         Vector3 endPosition = startPosition + direction * maxDistance;
