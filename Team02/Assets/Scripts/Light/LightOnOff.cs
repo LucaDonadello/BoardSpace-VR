@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class LightOnOff : MonoBehaviour
 {
-    public LineRenderer lineRenderer;
     public Transform player;
     public Transform cameraTransform;
     public string InteractableTag = "Interactable";  // The tag for interactable objects (e.g., TVs, Lamps)
@@ -14,12 +13,7 @@ public class LightOnOff : MonoBehaviour
     void Start()
     {
         playerData = player.GetComponent<PlayerData>();  // Get PlayerData component from the player
-        maxDistance = playerData.playerRayLenght;  // Set max distance from PlayerData
-        // Ensure the LineRenderer is set up
-        if (lineRenderer == null)
-        {
-            lineRenderer = GetComponent<LineRenderer>();
-        }
+        maxDistance = playerData.playerRayLength;  // Set max distance from PlayerData
     }
 
     void Update()
@@ -51,9 +45,5 @@ public class LightOnOff : MonoBehaviour
                 }
             }
         }
-
-        // Show the ray with LineRenderer
-        lineRenderer.SetPosition(0, startPosition);
-        lineRenderer.SetPosition(1, endPosition);
     }
 }

@@ -3,7 +3,6 @@ using Photon.Pun;
 
 public class SitOnSofa : MonoBehaviourPun
 {
-    public LineRenderer lineRenderer;
     public Transform player;
     public Transform cameraTransform;
     public string sofaKeyword = "Sofa";
@@ -24,12 +23,8 @@ public class SitOnSofa : MonoBehaviourPun
     void Start()
     {
         playerData = player.GetComponent<PlayerData>();
-        maxDistance = playerData.playerRayLenght;
+        maxDistance = playerData.playerRayLength;
         
-        if (lineRenderer == null)
-        {
-            lineRenderer = GetComponent<LineRenderer>();
-        }
 
         characterController = player.GetComponent<CharacterController>();
         if (characterController == null)
@@ -51,9 +46,6 @@ public class SitOnSofa : MonoBehaviourPun
         {
             endPosition = hitInfo.point;
         }
-
-        lineRenderer.SetPosition(0, startPosition);
-        lineRenderer.SetPosition(1, endPosition);
 
         // Sit or stand
         // Press Y on the keyboard or X on the controller to sit or stand up

@@ -19,11 +19,12 @@ public class OutlineEffect : MonoBehaviourPun
     void Start()
     {
         playerData = player.GetComponent<PlayerData>();
-        maxDistance = playerData.playerRayLenght;
+        maxDistance = playerData.playerRayLength;
     }
 
     void Update()
     {
+        maxDistance = playerData.playerRayLength;
         if (!photonView.IsMine) return;
         Ray ray = new Ray(rayOrigin.position, Camera.main.transform.forward);
 

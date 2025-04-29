@@ -1481,7 +1481,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c432faa51b1c5f439262fd65916ffe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lineRenderer: {fileID: 7675724426238331114}
   player: {fileID: 8915594982461393849}
   cameraTransform: {fileID: 4790158781579931229}
   teleportTag: Teleportable
@@ -1501,7 +1500,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cccf3be9ac785eb4f8529b9251724fe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lineRenderer: {fileID: 7675724426238331114}
   player: {fileID: 8915594982461393849}
   cameraTransform: {fileID: 4790158781579931229}
   teleportOffset: 0.5
@@ -1579,7 +1577,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57d7918fae0d7034a8589966487c641f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lineRenderer: {fileID: 7675724426238331114}
   player: {fileID: 8915594982461393849}
   cameraTransform: {fileID: 4790158781579931229}
   sofaKeyword: Sofa
@@ -1601,7 +1598,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fb0af80929277446bc8d1b31dce8a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lineRenderer: {fileID: 7675724426238331114}
   player: {fileID: 8915594982461393849}
   cameraTransform: {fileID: 4790158781579931229}
   InteractableTag: Interactable
@@ -1621,7 +1617,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35e695e7a0f84854385708fb96c9ad1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lineRenderer: {fileID: 7675724426238331114}
   player: {fileID: 8915594982461393849}
   cameraTransform: {fileID: 4790158781579931229}
   InteractableTag: Interactable
@@ -1641,7 +1636,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176cc0b7209fb0042a8d6d45cabd9b49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lineRenderer: {fileID: 7675724426238331114}
   player: {fileID: 8915594982461393849}
   cameraTransform: {fileID: 4790158781579931229}
   hitLayers:
@@ -1687,7 +1681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da3a29919a69bc9489aa326fdc0cbaa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerRayLenght: 10
+  playerRayLength: 10
 --- !u!1 &3571283810602674530
 GameObject:
   m_ObjectHideFlags: 0

@@ -3,22 +3,19 @@ using Photon.Pun;
 
 public class PlayerMusicInteraction : MonoBehaviourPun
 {
-    public LineRenderer lineRenderer;
     public Transform player;
     public Transform cameraTransform;
     public string InteractableTag = "Interactable";  // The tag for the interactable objects (TVs)
-    public float maxDistance = 10f;  // Maximum distance for raycast
+    public float maxDistance;  // Maximum distance for raycast
     public LayerMask hitLayers;  // Layers to interact with (TVs or other interactables)
 
     private bool isPlaying = false;
 
+    private PlayerData playerData;  // Reference to PlayerData script
+
     void Start()
     {
-        // Ensure the LineRenderer is set up
-        if (lineRenderer == null)
-        {
-            lineRenderer = GetComponent<LineRenderer>();
-        }
+        playerData = player.GetComponent<PlayerData>();
     }
 
     void Update()
@@ -29,7 +26,9 @@ public class PlayerMusicInteraction : MonoBehaviourPun
             return;
         }
 
-        Vector3 startPosition = player.position;
+        maxDistance = playerData.playerRayLength;  // Set max distance from PlayerData
+
+        Vector3 startPosition = cameraTransform.position;
         Vector3 direction = cameraTransform.forward;
         Vector3 endPosition = startPosition + direction * maxDistance;
 
@@ -40,9 +39,6 @@ public class PlayerMusicInteraction : MonoBehaviourPun
         {
             endPosition = hitInfo.point;
         }
-        // Show the ray with LineRenderer
-        lineRenderer.SetPosition(0, startPosition);
-        lineRenderer.SetPosition(1, endPosition);
 
         // Check if the hit object has the tag "TV"
         // Press Y on the keyboard or X on the controller to interact with the TV

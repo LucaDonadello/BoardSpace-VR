@@ -2,5 +2,5 @@ using UnityEngine;
 
 public class PlayerData : MonoBehaviour
 {
-    public float playerRayLenght = 10f;
+    public float playerRayLength = 10f;
 }

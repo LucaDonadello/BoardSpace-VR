@@ -19,8 +19,6 @@ public class SettingsMenuManager : MonoBehaviourPun
     private GameObject player;
     private GameObject characterSelection;
     private MonoBehaviour[] componentsToDisable;
-    private LineRenderer lineRenderer;
-
     private PlayerData playerData;
 
     void Start()
@@ -152,7 +150,7 @@ public class SettingsMenuManager : MonoBehaviourPun
 
     void SetRayLength(float length)
     {
-        playerData.playerRayLenght = length;
+        playerData.playerRayLength = length;
     }
 
     void ActivateCurrentButton()
