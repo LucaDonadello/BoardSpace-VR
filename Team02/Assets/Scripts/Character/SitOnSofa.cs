@@ -6,6 +6,7 @@ public class SitOnSofa : MonoBehaviourPun
     public Transform player;
     public Transform cameraTransform;
     public string sofaKeyword = "Sofa";
+    public string chairKeyword = "Chair";
     public float sitHeightOffset = 0.3f;
 
     public LayerMask interactableLayers;
@@ -53,7 +54,7 @@ public class SitOnSofa : MonoBehaviourPun
         {
             Transform hitTransform = hitInfo.transform;
 
-            if (!isSitting && hitTransform.name.Contains(sofaKeyword))
+            if (!isSitting && (hitTransform.name.Contains(sofaKeyword) || hitTransform.name.Contains(chairKeyword)))
             {
                 TrySit(hitTransform, hitInfo.point);
             }
