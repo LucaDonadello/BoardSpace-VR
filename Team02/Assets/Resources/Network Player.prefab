@@ -1581,6 +1581,7 @@ MonoBehaviour:
   player: {fileID: 8915594982461393849}
   cameraTransform: {fileID: 4790158781579931229}
   sofaKeyword: Sofa
+  chairKeyword: Chair
   sitHeightOffset: 0.3
   interactableLayers:
     serializedVersion: 2

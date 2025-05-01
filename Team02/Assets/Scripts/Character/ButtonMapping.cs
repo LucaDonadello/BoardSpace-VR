@@ -5,6 +5,7 @@ using UnityEngine;
 //Y on controller = G on keyboard
 //OK on controller = 0 on keyboard
 //A on controller = B on keyboard
+//B on controller = N on keyboard
 public class ButtonMapping : MonoBehaviour
 {
     public enum Platform { Windows, Android }
@@ -33,7 +34,8 @@ public class ButtonMapping : MonoBehaviour
             "X" => KeyCode.Y,         
             "Y" => KeyCode.G,         
             "OK" => KeyCode.Alpha0,   
-            "A" => KeyCode.B,         
+            "A" => KeyCode.B,   
+            "B" => KeyCode.N,      
             _ => KeyCode.None
         };
     }
@@ -48,6 +50,7 @@ public class ButtonMapping : MonoBehaviour
                 "X" => "js2",
                 "Y" => "js3",
                 "A" => "js10",
+                "B" => "js5",
                 _ => button
             },
             Platform.Windows => button switch
@@ -56,6 +59,7 @@ public class ButtonMapping : MonoBehaviour
                 "X" => "js1",
                 "Y" => "js0",
                 "A" => "js8",
+                "B" => "js10",
                 _ => button
             },
             _ => button
