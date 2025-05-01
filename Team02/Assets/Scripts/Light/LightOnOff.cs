@@ -32,7 +32,7 @@ public class LightOnOff : MonoBehaviour
 
             // Check for input and correct tag/name
             // Press Y on the keyboard or X on the controller to interact with the lamp
-            if ((Input.GetKeyDown(KeyCode.Y) || Input.GetButtonDown("js2")) &&
+            if (ButtonMapping.Instance.GetActionDown("X") &&
                 hitInfo.collider != null &&
                 hitInfo.collider.CompareTag(InteractableTag) &&
                 hitInfo.collider.gameObject.name.Contains("Lamp"))

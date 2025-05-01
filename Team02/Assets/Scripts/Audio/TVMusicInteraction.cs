@@ -42,7 +42,8 @@ public class PlayerMusicInteraction : MonoBehaviourPun
 
         // Check if the hit object has the tag "TV"
         // Press Y on the keyboard or X on the controller to interact with the TV
-        if ((Input.GetKeyDown(KeyCode.Y) || Input.GetButtonDown("js2")) && hitInfo.collider != null && hitInfo.collider.CompareTag(InteractableTag) && hitInfo.collider.gameObject.name.Contains("TV"))
+        //automatically detects X on controller or Y on keyboard
+        if (ButtonMapping.Instance.GetActionDown("X") && hitInfo.collider != null && hitInfo.collider.CompareTag(InteractableTag) && hitInfo.collider.gameObject.name.Contains("TV"))
         {
             TVMusicControl tvMusic = hitInfo.transform.GetComponent<TVMusicControl>();
 

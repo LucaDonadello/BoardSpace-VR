@@ -1296,6 +1296,7 @@ GameObject:
   - component: {fileID: 6399182441641832036}
   - component: {fileID: 8426469194683164869}
   - component: {fileID: 3231396123164459223}
+  - component: {fileID: -5614272098763825909}
   m_Layer: 0
   m_Name: Network Player
   m_TagString: Player
@@ -1682,6 +1683,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerRayLength: 10
+--- !u!114 &-5614272098763825909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3111482121541135492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47dc8faa8ad46c94ba55cb2710a93ace, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentPlatform: 0
 --- !u!1 &3571283810602674530
 GameObject:
   m_ObjectHideFlags: 0

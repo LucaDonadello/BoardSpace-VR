@@ -26,7 +26,7 @@ public class GrabItemVR : MonoBehaviourPun
 
         // Handle release first
         // Press Y on the controller or G on the keyboard to drop the object
-        if (isHolding && (Input.GetButtonDown("js3") || Input.GetKeyDown(KeyCode.G)))
+        if (isHolding && ButtonMapping.Instance.GetActionDown("Y"))
         {
             DropObject();
             return;
@@ -44,7 +44,7 @@ public class GrabItemVR : MonoBehaviourPun
         }
 
         // Press Y on the controller or G on the keyboard to grab the object
-        if (!isHolding && (Input.GetButtonDown("js3") || Input.GetKeyDown(KeyCode.G)))
+        if (!isHolding && ButtonMapping.Instance.GetActionDown("Y"))
         {
             GameObject hitObject = hitInfo.collider.gameObject;
 
