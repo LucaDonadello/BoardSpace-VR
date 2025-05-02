@@ -10,7 +10,7 @@ public class GrabItemVR : MonoBehaviourPun
     public string grabbableTag = "Grabbable";
     private GameObject currentObject;
     private Rigidbody currentRb;
-    public float holdDistance = 2.0f;
+    public float holdDistance = 3.0f;
 
     private bool isHolding = false;
     private PlayerData playerData;
@@ -39,7 +39,7 @@ public class GrabItemVR : MonoBehaviourPun
         {
             float scrollInput = Input.GetAxis("Vertical");
             holdDistance += scrollInput * Time.deltaTime * 1.5f;
-            holdDistance = Mathf.Clamp(holdDistance, 0.2f, 3.2f);
+            holdDistance = Mathf.Clamp(holdDistance, 0.2f, 3.5f);
         }
 
         float maxDistance = playerData.playerRayLength;
@@ -134,7 +134,10 @@ public class GrabItemVR : MonoBehaviourPun
         }
 
         Debug.Log("Dropped: " + currentObject?.name);
-
+        SnapToChessSquare snapScript = currentObject.GetComponent<SnapToChessSquare>();
+        if (snapScript != null)
+            snapScript.SnapToClosest();
+            
         currentObject = null;
         currentRb = null;
         isHolding = false;
