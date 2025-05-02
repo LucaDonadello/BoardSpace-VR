@@ -56,6 +56,11 @@ public class GrabItemVR : MonoBehaviourPun
 
                 if (currentRb != null)
                 {
+                    //move object before so it doesn't collide and explode with other objects nearby
+                    Vector3 targetPos = cameraTransform.position + cameraTransform.TransformDirection(grabLocation);
+                    currentRb.position = targetPos;
+                    currentRb.rotation = cameraTransform.rotation;
+
                     currentRb.linearVelocity = Vector3.zero;
                     currentRb.angularVelocity = Vector3.zero;
                     currentRb.useGravity = false;
