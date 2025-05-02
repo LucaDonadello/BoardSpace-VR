@@ -12,7 +12,7 @@ public class SitOnSofa : MonoBehaviourPun
     public LayerMask interactableLayers;
 
     private CharacterController characterController;
-    private bool isSitting = false;
+    public bool IsSitting { get; private set; } = false;
     private Transform currentSofa = null;
     public CharacterMovement characterMovementScript;
 
@@ -54,11 +54,11 @@ public class SitOnSofa : MonoBehaviourPun
         {
             Transform hitTransform = hitInfo.transform;
 
-            if (!isSitting && (hitTransform.name.Contains(sofaKeyword) || hitTransform.name.Contains(chairKeyword)))
+            if (!IsSitting && (hitTransform.name.Contains(sofaKeyword) || hitTransform.name.Contains(chairKeyword)))
             {
                 TrySit(hitTransform, hitInfo.point);
             }
-            else if (isSitting)
+            else if (IsSitting)
             {
                 StandUp();
             }
@@ -80,7 +80,7 @@ public class SitOnSofa : MonoBehaviourPun
 
         player.position = hitPoint + Vector3.up * sitHeightOffset;
 
-        isSitting = true;
+        IsSitting = true;
         currentSofa = hitTransform;
 
         if (seat != null)
@@ -91,7 +91,7 @@ public class SitOnSofa : MonoBehaviourPun
 
     void StandUp()
     {
-        isSitting = false;
+        IsSitting = false;
 
         if (currentSofa != null)
         {

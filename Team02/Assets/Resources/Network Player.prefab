@@ -1645,6 +1645,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   grabLocation: {x: -0.5, y: -0.3, z: 1}
   grabbableTag: Grabbable
+  holdDistance: 1
 --- !u!114 &6399182441641832036
 MonoBehaviour:
   m_ObjectHideFlags: 0
