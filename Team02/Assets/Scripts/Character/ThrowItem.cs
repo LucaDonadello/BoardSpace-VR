@@ -1,17 +1,16 @@
 using UnityEngine;
 using Photon.Pun;
 
-public class GrabItemVR : MonoBehaviourPun
+public class ThrowItem : MonoBehaviourPun
 {
     public Transform player;
     public Transform cameraTransform;
     public LayerMask hitLayers;
     public Vector3 grabLocation = new Vector3(-0.5f, -1f, 1f);
-    public string grabbableTag = "Grabbable";
+    public string grabbableTag = "Throwable";
     private GameObject currentObject;
     private Rigidbody currentRb;
     public float holdDistance = 3.0f;
-    private float originalHoldDistance;
 
     private bool isHolding = false;
     private PlayerData playerData;
@@ -21,7 +20,6 @@ public class GrabItemVR : MonoBehaviourPun
     {
         playerData = player.GetComponent<PlayerData>();
         sitOnSofa = player.GetComponent<SitOnSofa>();
-        originalHoldDistance = holdDistance;
     }
 
     void Update()
@@ -31,11 +29,6 @@ public class GrabItemVR : MonoBehaviourPun
         // Handle release first
         // Press Y on the controller or G on the keyboard to drop the object
         if (isHolding && ButtonMapping.Instance.GetActionDown("Y"))
-        {
-            DropObject();
-            return;
-        }
-        else if(isHolding && ButtonMapping.Instance.GetActionDown("A"))
         {
             ThrowObject();
             return;
@@ -130,49 +123,19 @@ public class GrabItemVR : MonoBehaviourPun
         }
     }
 
-    private void DropObject()
-    {
-        if (currentRb != null)
-        {
-            currentRb.useGravity = true;
-            currentRb.isKinematic = false;
-            currentRb.linearVelocity = Vector3.zero;
-            currentRb.angularVelocity = Vector3.zero;
-        }
-
-        Debug.Log("Dropped: " + currentObject?.name);
-        SnapToChessSquare snapScript = currentObject.GetComponent<SnapToChessSquare>();
-        if (snapScript != null)
-            snapScript.SnapToClosest();
-            
-        currentObject = null;
-        currentRb = null;
-        isHolding = false;
-        holdDistance = originalHoldDistance;
-    }
-
     private void ThrowObject()
     {
         if (currentRb != null)
         {
             currentRb.useGravity = true;
             currentRb.isKinematic = false;
-            currentRb.linearVelocity = cameraTransform.forward * 3f;
+            currentRb.linearVelocity = cameraTransform.forward * 7f;
             currentRb.angularVelocity = Random.insideUnitSphere * 2f;
-        }
-
-        //tell reset position script only if it's ping pong ball
-        if (currentObject != null && currentObject.name.StartsWith("SM_ping_pong_ball"))
-        {
-            ManualBallReset resetScript = currentObject.GetComponent<ManualBallReset>();
-            if (resetScript != null)
-                resetScript.RegisterThrow();
         }
 
         Debug.Log("Threw: " + currentObject?.name);    
         currentObject = null;
         currentRb = null;
         isHolding = false;
-        holdDistance = originalHoldDistance;
     }
-} 
+}
