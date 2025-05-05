@@ -13177,7 +13177,6 @@ GameObject:
   m_Component:
   - component: {fileID: 971035036}
   - component: {fileID: 971035037}
-  - component: {fileID: 971035038}
   m_Layer: 0
   m_Name: DocSharing
   m_TagString: Untagged
@@ -13214,20 +13213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 1284654001}
-  pdfViewer: {fileID: 971035038}
---- !u!114 &971035038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 971035035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5373ef825fc00d4a88e252a28ff75a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  display: {fileID: 790102546}
+  image: {fileID: 790102546}
 --- !u!1001 &975400431
 PrefabInstance:
   m_ObjectHideFlags: 0
