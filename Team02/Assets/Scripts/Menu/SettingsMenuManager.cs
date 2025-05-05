@@ -9,9 +9,7 @@ public class SettingsMenuManager : MonoBehaviourPun
     private int selectedIndex = 0;
 
     private float masterVolume = 1f;
-    private int textSizeIndex = 1;
     private int rayLength = 10;
-    private readonly string[] textSizes = { "Small", "Medium", "Large" };
 
     private bool verticalInUse = false;
     private bool horizontalInUse = false;
@@ -135,11 +133,6 @@ public class SettingsMenuManager : MonoBehaviourPun
                 label.text = $"Master Volume: {Mathf.RoundToInt(masterVolume * 100)}%";
                 break;
 
-            case "TextSizeButton":
-                textSizeIndex = (textSizeIndex + dir + textSizes.Length) % textSizes.Length;
-                label.text = $"Text Size: {textSizes[textSizeIndex]}";
-                break;
-
             case "RayLengthButton":
                 rayLength = Mathf.Clamp(rayLength + dir * 5, 5, 20);
                 label.text = $"Ray Length: {rayLength}m";
@@ -194,9 +187,6 @@ public class SettingsMenuManager : MonoBehaviourPun
             {
                 case "MasterVolumeButton":
                     label.text = $"Master Volume: {(int)(masterVolume * 100)}%";
-                    break;
-                case "TextSizeButton":
-                    label.text = $"Text Size: {textSizes[textSizeIndex]}";
                     break;
                 case "RayLengthButton":
                     label.text = $"Ray Length: {rayLength}m";
