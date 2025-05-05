@@ -16,6 +16,7 @@ public class SettingsMenuManager : MonoBehaviourPun
 
     private GameObject player;
     private GameObject characterSelection;
+    private GameObject reticle;
     private MonoBehaviour[] componentsToDisable;
     private PlayerData playerData;
 
@@ -36,6 +37,7 @@ public class SettingsMenuManager : MonoBehaviourPun
             player.GetComponent<SitOnSofa>()
         };
         characterSelection = player.transform.Find("CharacterSelection").gameObject;
+        reticle = Camera.main.transform.Find("Reticle").gameObject;
     }
 
     void Update()
@@ -96,6 +98,7 @@ public class SettingsMenuManager : MonoBehaviourPun
         {
             if (comp != null) comp.enabled = false;
         }
+        if (reticle != null) reticle.SetActive(false);
     }
 
     void EnablePlayerControls()
@@ -104,6 +107,7 @@ public class SettingsMenuManager : MonoBehaviourPun
         {
             if (comp != null) comp.enabled = true;
         }
+        if (reticle != null) reticle.SetActive(true);
     }
 
     void MoveSelection(int dir)
