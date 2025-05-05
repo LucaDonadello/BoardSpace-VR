@@ -1,13 +1,21 @@
 using UnityEngine;
+using Photon.Pun;
 
-public class TVMusicControl : MonoBehaviour
+[RequireComponent(typeof(AudioSource), typeof(PhotonView))]
+public class TVMusicControl : MonoBehaviourPun
 {
-    public AudioClip[] musicTracks;  // Array of audio clips for the TV object
-    public bool loop = true;  // Whether to loop through the music tracks
+    [Header("Tracks & Looping")]
+    public AudioClip[] musicTracks;
+    public bool loop = true;
+
+    [Header("3D Attenuation")]
+    public float minDistance = 1f;
+    public float maxDistance = 3f;
+
     private AudioSource audioSource;
     private int currentTrackIndex = 0;
 
-    void Start()
+    void Awake()
     {
         // Ensure the AudioSource is attached to the TV
         audioSource = GetComponent<AudioSource>();
@@ -15,27 +23,36 @@ public class TVMusicControl : MonoBehaviour
         {
             audioSource = gameObject.AddComponent<AudioSource>();
         }
-
         audioSource.playOnAwake = false;  // Prevent music from starting automatically
+
+        // 3D sound settings
+        audioSource.spatialBlend = 1f;                                // full 3D
+        audioSource.rolloffMode  = AudioRolloffMode.Logarithmic;
+        audioSource.minDistance  = minDistance;
+        audioSource.maxDistance  = maxDistance;
     }
 
-    public void PlayNextTrack()
+    public void PlayNextTrack() => photonView.RPC(nameof(RPC_PlayNextTrack), RpcTarget.AllBuffered);
+
+    public void StopMusic() => photonView.RPC(nameof(RPC_StopMusic), RpcTarget.AllBuffered);
+
+    [PunRPC]
+    void RPC_PlayNextTrack()
     {
         if (musicTracks.Length == 0) return;
 
         audioSource.clip = musicTracks[currentTrackIndex];
         audioSource.Play();
 
+        // advance index
         currentTrackIndex++;
-
         if (currentTrackIndex >= musicTracks.Length)
-        {
             currentTrackIndex = loop ? 0 : musicTracks.Length - 1;
-        }
     }
 
-    public void StopMusic()
+    [PunRPC]
+    void RPC_StopMusic()
     {
-        audioSource.Stop();  // Stop the currently playing music
+        audioSource.Stop();
     }
 }

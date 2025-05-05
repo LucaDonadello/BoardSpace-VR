@@ -45183,6 +45183,7 @@ GameObject:
   - component: {fileID: 5695154192510422513}
   - component: {fileID: 5695154192510422515}
   - component: {fileID: 5695154192510422516}
+  - component: {fileID: 5695154192510422517}
   m_Layer: 0
   m_Name: TV_Apt_01
   m_TagString: Interactable
@@ -48665,6 +48666,30 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 5ecacb1d89ff2e940969b46fb071cdda, type: 3}
   - {fileID: 8300000, guid: 10a153a980c722242990266d3843b998, type: 3}
   loop: 1
+  minDistance: 1
+  maxDistance: 3
+--- !u!114 &5695154192510422517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4803286031627699797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 1
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &5696984651980348517
 GameObject:
   m_ObjectHideFlags: 0

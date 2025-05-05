@@ -130,6 +130,7 @@ public class SettingsMenuManager : MonoBehaviourPun
         {
             case "MasterVolumeButton":
                 masterVolume = Mathf.Clamp01(masterVolume + dir * 0.1f);
+                AudioListener.volume = masterVolume;
                 label.text = $"Master Volume: {Mathf.RoundToInt(masterVolume * 100)}%";
                 break;
 
