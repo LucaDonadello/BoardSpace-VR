@@ -11,6 +11,8 @@ public class TeleportToRooms : MonoBehaviourPun
     private CharacterController characterController;
 
     private PlayerData playerData;
+    public AudioClip doorSound;
+    private AudioSource audioSource;
 
     void Start()
     {
@@ -21,6 +23,7 @@ public class TeleportToRooms : MonoBehaviourPun
         {
             Debug.LogError("CharacterController not found on the player!");
         }
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void TeleportPlayer(Vector3 targetPosition)
@@ -70,21 +73,29 @@ public class TeleportToRooms : MonoBehaviourPun
             {
                 Vector3 targetPosition = new Vector3(5, 0, 21);
                 TeleportPlayer(targetPosition);
+                if (doorSound != null && audioSource != null)
+                    audioSource.PlayOneShot(doorSound);
             }
             else if (hitInfo.collider.CompareTag("DoorToLiving"))
             {
                 Vector3 targetPosition = new Vector3(10, 0, 9);
                 TeleportPlayer(targetPosition);
+                if (doorSound != null && audioSource != null)
+                    audioSource.PlayOneShot(doorSound);
             }
             else if (hitInfo.collider.CompareTag("DoorToLiving2"))
             {
                 Vector3 targetPosition = new Vector3(10, 0, -9);
                 TeleportPlayer(targetPosition);
+                if (doorSound != null && audioSource != null)
+                    audioSource.PlayOneShot(doorSound);
             }
             else if (hitInfo.collider.CompareTag("DoorToGame"))
             {
                 Vector3 targetPosition = new Vector3(10, 0, -20);
                 TeleportPlayer(targetPosition);
+                if (doorSound != null && audioSource != null)
+                    audioSource.PlayOneShot(doorSound);
             }
         }
     }

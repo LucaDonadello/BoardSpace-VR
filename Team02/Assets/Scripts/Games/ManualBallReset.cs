@@ -23,7 +23,7 @@ public class ManualBallReset : MonoBehaviour
             return;
 
         //Wait after last throw so not throwing and resetting position at the same time
-        if ((Input.GetKeyDown(KeyCode.R) || ButtonMapping.Instance.GetActionDown("B")) && Time.time > lastThrowTime + resetCooldown)
+        if (ButtonMapping.Instance.GetActionDown("=") && Time.time > lastThrowTime + resetCooldown)
             ResetBall();
     }
 

@@ -17,6 +17,8 @@ TagManager:
   - Grabbable
   - Bullet
   - Throwable
+  - PingPongTable
+  - Cup
   layers:
   - Default
   - TransparentFX

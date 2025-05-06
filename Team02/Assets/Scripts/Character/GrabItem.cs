@@ -12,16 +12,18 @@ public class GrabItemVR : MonoBehaviourPun
     private Rigidbody currentRb;
     public float holdDistance = 3.0f;
     private float originalHoldDistance;
-
     private bool isHolding = false;
     private PlayerData playerData;
     private SitOnSofa sitOnSofa;
+    public AudioClip grabSound;
+    private AudioSource audioSource;
 
     void Start()
     {
         playerData = player.GetComponent<PlayerData>();
         sitOnSofa = player.GetComponent<SitOnSofa>();
         originalHoldDistance = holdDistance;
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -70,6 +72,8 @@ public class GrabItemVR : MonoBehaviourPun
                 currentObject = hitObject;
                 currentRb = currentObject.GetComponent<Rigidbody>();
                 isHolding = true;
+                if (grabSound != null && audioSource != null)
+                    audioSource.PlayOneShot(grabSound);
 
                 if (currentRb != null)
                 {

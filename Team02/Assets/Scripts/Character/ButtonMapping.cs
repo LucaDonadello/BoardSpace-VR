@@ -36,6 +36,7 @@ public class ButtonMapping : MonoBehaviour
             "OK" => KeyCode.Alpha0,   
             "A" => KeyCode.B,   
             "B" => KeyCode.N,      
+            "=" => KeyCode.Equals,
             _ => KeyCode.None
         };
     }
@@ -51,6 +52,7 @@ public class ButtonMapping : MonoBehaviour
                 "Y" => "js3",
                 "A" => "js10",
                 "B" => "js5",
+                "=" => "js11",
                 _ => button
             },
             Platform.Windows => button switch
@@ -60,6 +62,7 @@ public class ButtonMapping : MonoBehaviour
                 "Y" => "js0",
                 "A" => "js8",
                 "B" => "js10",
+                "=" => "js9",
                 _ => button
             },
             _ => button
