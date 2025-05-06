@@ -140,6 +140,8 @@ public class GrabItemVR : MonoBehaviourPun
         {
             currentRb.useGravity = true;
             currentRb.isKinematic = false;
+            currentRb.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
+            currentRb.interpolation = RigidbodyInterpolation.Interpolate;
             currentRb.linearVelocity = Vector3.zero;
             currentRb.angularVelocity = Vector3.zero;
         }
@@ -161,6 +163,8 @@ public class GrabItemVR : MonoBehaviourPun
         {
             currentRb.useGravity = true;
             currentRb.isKinematic = false;
+            currentRb.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
+            currentRb.interpolation = RigidbodyInterpolation.Interpolate;
             currentRb.linearVelocity = cameraTransform.forward * 3f;
             currentRb.angularVelocity = Random.insideUnitSphere * 2f;
         }
