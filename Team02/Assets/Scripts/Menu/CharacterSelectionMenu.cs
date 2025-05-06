@@ -15,6 +15,7 @@ public class CharacterSelectionMenu : MonoBehaviourPun
     private GameObject currentPlayerInstance;
     private GameObject characterSkin;
     private GameObject defaultSkin;
+    private GameObject reticle;
     private Transform cam;
     private CharacterController playerController;
     private CharacterMovement playerMovement;
@@ -23,7 +24,6 @@ public class CharacterSelectionMenu : MonoBehaviourPun
     private int currentCharacterIndex = 0;
 
     private MonoBehaviour[] componentsToDisable;
-    private LineRenderer lineRenderer;
 
     private Button leftArrowButton;
     private Button rightArrowButton;
@@ -50,9 +50,10 @@ public class CharacterSelectionMenu : MonoBehaviourPun
             player.GetComponent<CharacterMovement>(),
             player.GetComponent<Teleport>(),
             player.GetComponent<TeleportToRooms>(),
-            player.GetComponent<SitOnSofa>()
+            player.GetComponent<SitOnSofa>(),
+            player.GetComponentInChildren<GraphicRaycaster>(),
         };
-        lineRenderer = player.GetComponent<LineRenderer>();
+        reticle = Camera.main.transform.Find("Reticle").gameObject;
 
         cam = player.transform.Find("XRCardboardRig/HeightOffset/Main Camera");
         characterSkin = player.transform.Find("CharacterSkin").gameObject;
@@ -101,10 +102,7 @@ public class CharacterSelectionMenu : MonoBehaviourPun
         {
             if (comp != null) comp.enabled = false;
         }
-        if (lineRenderer != null)
-        {
-            lineRenderer.enabled = false;
-        }
+        if (reticle != null) reticle.SetActive(false);
     }
 
     void EnablePlayerControls()
@@ -113,10 +111,7 @@ public class CharacterSelectionMenu : MonoBehaviourPun
         {
             if (comp != null) comp.enabled = true;
         }
-        if (lineRenderer != null)
-        {
-            lineRenderer.enabled = true;
-        }
+        if (reticle != null) reticle.SetActive(true);
     }
 
     public void NextCharacter()

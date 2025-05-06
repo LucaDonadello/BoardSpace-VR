@@ -41,6 +41,8 @@ MonoBehaviour:
   - RespawnSpaceship
   - SetParentToCharacterSkin
   - DisableDefaultSkin
+  - RPC_PlayNextTrack
+  - RPC_StopMusic
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
