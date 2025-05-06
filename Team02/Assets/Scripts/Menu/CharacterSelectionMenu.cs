@@ -50,7 +50,8 @@ public class CharacterSelectionMenu : MonoBehaviourPun
             player.GetComponent<CharacterMovement>(),
             player.GetComponent<Teleport>(),
             player.GetComponent<TeleportToRooms>(),
-            player.GetComponent<SitOnSofa>()
+            player.GetComponent<SitOnSofa>(),
+            player.GetComponentInChildren<GraphicRaycaster>(),
         };
         reticle = Camera.main.transform.Find("Reticle").gameObject;
 

@@ -34,7 +34,8 @@ public class SettingsMenuManager : MonoBehaviourPun
             player.GetComponent<CharacterMovement>(),
             player.GetComponent<Teleport>(),
             player.GetComponent<TeleportToRooms>(),
-            player.GetComponent<SitOnSofa>()
+            player.GetComponent<SitOnSofa>(),
+            player.GetComponentInChildren<GraphicRaycaster>(),
         };
         characterSelection = player.transform.Find("CharacterSelection").gameObject;
         reticle = Camera.main.transform.Find("Reticle").gameObject;
