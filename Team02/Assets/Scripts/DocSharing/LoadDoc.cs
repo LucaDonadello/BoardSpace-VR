@@ -26,6 +26,7 @@ public class LoadDoc : MonoBehaviour
         {
             Permission.RequestUserPermission(Permission.ExternalStorageRead);
         }
+        image = FindFirstObjectByType<RawImage>();
     }
 
     void Update()

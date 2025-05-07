@@ -850,8 +850,7 @@ MonoBehaviour:
   maxDistance: 10
   hitLayers:
     serializedVersion: 2
-    m_Bits: 0
-  text: {fileID: 0}
+    m_Bits: 4294967295
   image: {fileID: 0}
 --- !u!1 &3672492058992579488
 GameObject:
