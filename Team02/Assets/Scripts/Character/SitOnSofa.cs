@@ -25,7 +25,6 @@ public class SitOnSofa : MonoBehaviourPun
         playerData = player.GetComponent<PlayerData>();
         maxDistance = playerData.playerRayLength;
 
-
         characterController = player.GetComponent<CharacterController>();
         if (characterController == null)
         {
