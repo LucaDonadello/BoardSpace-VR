@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 12f37bae86c7f524587dfaa92260d1a2
+timeCreated: 1463323810
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63033
+  packageName: Classic Jukebox
+  packageVersion: 1.3
+  assetPath: Assets/Jukebox01/Materials/GlassDirty.mat
+  uploadId: 515295
