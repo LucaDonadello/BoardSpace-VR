@@ -47,6 +47,7 @@ MonoBehaviour:
   - DisableDefaultSkin
   - RPC_PlayNextTrack
   - RPC_StopMusic
+  - DocumentLoad
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
