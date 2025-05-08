@@ -3,7 +3,6 @@ using Photon.Pun;
 
 public class GrabItemVR : MonoBehaviourPun
 {
-    public LineRenderer lineRenderer;
     public Transform player;
     public Transform cameraTransform;
     public LayerMask hitLayers;
@@ -13,6 +12,13 @@ public class GrabItemVR : MonoBehaviourPun
     private Rigidbody currentRb;
 
     private bool isHolding = false;
+
+    private PlayerData playerData;
+
+    void Start()
+    {
+        playerData = player.GetComponent<PlayerData>();
+    }
 
     void Update()
     {
@@ -26,8 +32,8 @@ public class GrabItemVR : MonoBehaviourPun
             return;
         }
 
-        float maxDistance = 10;
-        Vector3 startPosition = player.position;
+        float maxDistance = playerData.playerRayLength;
+        Vector3 startPosition = cameraTransform.position;
         Vector3 direction = cameraTransform.forward;
         Vector3 endPosition = startPosition + direction * maxDistance;
         RaycastHit hitInfo;
@@ -36,9 +42,6 @@ public class GrabItemVR : MonoBehaviourPun
         {
             endPosition = hitInfo.point;
         }
-
-        lineRenderer.SetPosition(0, startPosition);
-        lineRenderer.SetPosition(1, endPosition);
 
         // Press Y on the controller or G on the keyboard to grab the object
         if (!isHolding && (Input.GetButtonDown("js3") || Input.GetKeyDown(KeyCode.G)))

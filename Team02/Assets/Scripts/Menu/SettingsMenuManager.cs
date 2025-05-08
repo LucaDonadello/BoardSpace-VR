@@ -9,16 +9,16 @@ public class SettingsMenuManager : MonoBehaviourPun
     private int selectedIndex = 0;
 
     private float masterVolume = 1f;
-    private int textSizeIndex = 1;
     private int rayLength = 10;
-    private readonly string[] textSizes = { "Small", "Medium", "Large" };
 
     private bool verticalInUse = false;
     private bool horizontalInUse = false;
 
     private GameObject player;
+    private GameObject characterSelection;
+    private GameObject reticle;
     private MonoBehaviour[] componentsToDisable;
-    private LineRenderer lineRenderer;
+    private PlayerData playerData;
 
     void Start()
     {
@@ -27,15 +27,18 @@ public class SettingsMenuManager : MonoBehaviourPun
         HighlightSelectedButton();
 
         player = GameObject.FindGameObjectWithTag("Player");
+        playerData = player.GetComponent<PlayerData>();
 
         componentsToDisable = new MonoBehaviour[]
         {
             player.GetComponent<CharacterMovement>(),
             player.GetComponent<Teleport>(),
             player.GetComponent<TeleportToRooms>(),
-            player.GetComponent<SitOnSofa>()
+            player.GetComponent<SitOnSofa>(),
+            player.GetComponentInChildren<GraphicRaycaster>(),
         };
-        lineRenderer = player.GetComponent<LineRenderer>();
+        characterSelection = player.transform.Find("CharacterSelection").gameObject;
+        reticle = Camera.main.transform.Find("Reticle").gameObject;
     }
 
     void Update()
@@ -96,10 +99,7 @@ public class SettingsMenuManager : MonoBehaviourPun
         {
             if (comp != null) comp.enabled = false;
         }
-        if (lineRenderer != null)
-        {
-            lineRenderer.enabled = false;
-        }
+        if (reticle != null) reticle.SetActive(false);
     }
 
     void EnablePlayerControls()
@@ -108,10 +108,7 @@ public class SettingsMenuManager : MonoBehaviourPun
         {
             if (comp != null) comp.enabled = true;
         }
-        if (lineRenderer != null)
-        {
-            lineRenderer.enabled = true;
-        }
+        if (reticle != null) reticle.SetActive(true);
     }
 
     void MoveSelection(int dir)
@@ -138,12 +135,8 @@ public class SettingsMenuManager : MonoBehaviourPun
         {
             case "MasterVolumeButton":
                 masterVolume = Mathf.Clamp01(masterVolume + dir * 0.1f);
+                AudioListener.volume = masterVolume;
                 label.text = $"Master Volume: {Mathf.RoundToInt(masterVolume * 100)}%";
-                break;
-
-            case "TextSizeButton":
-                textSizeIndex = (textSizeIndex + dir + textSizes.Length) % textSizes.Length;
-                label.text = $"Text Size: {textSizes[textSizeIndex]}";
                 break;
 
             case "RayLengthButton":
@@ -156,39 +149,7 @@ public class SettingsMenuManager : MonoBehaviourPun
 
     void SetRayLength(float length)
     {
-        lineRenderer.SetPosition(1, player.transform.position + player.transform.forward * length);
-
-        // TODO: Set the ray length for the components that need it
-        // Teleport teleport = player.GetComponent<Teleport>();
-        // if (teleport != null)
-        // {
-        //     teleport.maxDistance = length;
-        // }
-        // TeleportToRooms teleportToRooms = player.GetComponent<TeleportToRooms>();
-        // if (teleportToRooms != null)
-        // {
-        //     teleportToRooms.maxDistance = length;
-        // }
-        OutlineEffect outline = player.GetComponent<OutlineEffect>();
-        if (outline != null)
-        {
-            outline.maxDistance = length;
-        }
-        SitOnSofa sitOnSofa = player.GetComponent<SitOnSofa>();
-        if (sitOnSofa != null)
-        {
-            sitOnSofa.maxDistance = length;
-        }
-        PlayerMusicInteraction tvMusic = player.GetComponent<PlayerMusicInteraction>();
-        if (tvMusic != null)
-        {
-            tvMusic.maxDistance = length;
-        }
-        // GrabItemVR grabItemVR = player.GetComponent<GrabItemVR>();
-        // if (grabItemVR != null)
-        // {
-        //     grabItemVR.maxDistance = length;
-        // }
+        playerData.playerRayLength = length;
     }
 
     void ActivateCurrentButton()
@@ -197,8 +158,16 @@ public class SettingsMenuManager : MonoBehaviourPun
 
         switch (btnName)
         {
+            case "SkinSelectionButton":
+                characterSelection.SetActive(true);
+                EnablePlayerControls();
+                gameObject.SetActive(false);
+                break;
+
             case "ResumeButton":
                 EnablePlayerControls();
+                selectedIndex = 0; // Reset selection index
+                HighlightSelectedButton();
                 gameObject.SetActive(false);
                 break;
 
@@ -224,9 +193,6 @@ public class SettingsMenuManager : MonoBehaviourPun
             {
                 case "MasterVolumeButton":
                     label.text = $"Master Volume: {(int)(masterVolume * 100)}%";
-                    break;
-                case "TextSizeButton":
-                    label.text = $"Text Size: {textSizes[textSizeIndex]}";
                     break;
                 case "RayLengthButton":
                     label.text = $"Ray Length: {rayLength}m";

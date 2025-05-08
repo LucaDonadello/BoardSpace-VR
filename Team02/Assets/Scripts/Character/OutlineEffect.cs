@@ -6,6 +6,7 @@ public class OutlineEffect : MonoBehaviourPun
 {
     [Header("Raycast Settings")]
     public Transform rayOrigin;
+    public Transform player;
     public float maxDistance = 10f;
 
     [Header("Tags to Outline (partial match allowed)")]
@@ -13,8 +14,17 @@ public class OutlineEffect : MonoBehaviourPun
 
     private Outline lastOutlinedObject = null;
 
+    public PlayerData playerData;
+
+    void Start()
+    {
+        playerData = player.GetComponent<PlayerData>();
+        maxDistance = playerData.playerRayLength;
+    }
+
     void Update()
     {
+        maxDistance = playerData.playerRayLength;
         if (!photonView.IsMine) return;
         Ray ray = new Ray(rayOrigin.position, Camera.main.transform.forward);
 
