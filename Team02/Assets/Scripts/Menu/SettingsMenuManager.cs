@@ -9,15 +9,14 @@ public class SettingsMenuManager : MonoBehaviourPun
     private int selectedIndex = 0;
 
     private float masterVolume = 1f;
-    private int textSizeIndex = 1;
     private int rayLength = 10;
-    private readonly string[] textSizes = { "Small", "Medium", "Large" };
 
     private bool verticalInUse = false;
     private bool horizontalInUse = false;
 
     private GameObject player;
     private GameObject characterSelection;
+    private GameObject reticle;
     private MonoBehaviour[] componentsToDisable;
     private PlayerData playerData;
 
@@ -35,9 +34,11 @@ public class SettingsMenuManager : MonoBehaviourPun
             player.GetComponent<CharacterMovement>(),
             player.GetComponent<Teleport>(),
             player.GetComponent<TeleportToRooms>(),
-            player.GetComponent<SitOnSofa>()
+            player.GetComponent<SitOnSofa>(),
+            player.GetComponentInChildren<GraphicRaycaster>(),
         };
         characterSelection = player.transform.Find("CharacterSelection").gameObject;
+        reticle = Camera.main.transform.Find("Reticle").gameObject;
     }
 
     void Update()
@@ -98,6 +99,7 @@ public class SettingsMenuManager : MonoBehaviourPun
         {
             if (comp != null) comp.enabled = false;
         }
+        if (reticle != null) reticle.SetActive(false);
     }
 
     void EnablePlayerControls()
@@ -106,6 +108,7 @@ public class SettingsMenuManager : MonoBehaviourPun
         {
             if (comp != null) comp.enabled = true;
         }
+        if (reticle != null) reticle.SetActive(true);
     }
 
     void MoveSelection(int dir)
@@ -132,12 +135,8 @@ public class SettingsMenuManager : MonoBehaviourPun
         {
             case "MasterVolumeButton":
                 masterVolume = Mathf.Clamp01(masterVolume + dir * 0.1f);
+                AudioListener.volume = masterVolume;
                 label.text = $"Master Volume: {Mathf.RoundToInt(masterVolume * 100)}%";
-                break;
-
-            case "TextSizeButton":
-                textSizeIndex = (textSizeIndex + dir + textSizes.Length) % textSizes.Length;
-                label.text = $"Text Size: {textSizes[textSizeIndex]}";
                 break;
 
             case "RayLengthButton":
@@ -194,9 +193,6 @@ public class SettingsMenuManager : MonoBehaviourPun
             {
                 case "MasterVolumeButton":
                     label.text = $"Master Volume: {(int)(masterVolume * 100)}%";
-                    break;
-                case "TextSizeButton":
-                    label.text = $"Text Size: {textSizes[textSizeIndex]}";
                     break;
                 case "RayLengthButton":
                     label.text = $"Ray Length: {rayLength}m";
