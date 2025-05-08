@@ -18,13 +18,13 @@ public class SitOnSofa : MonoBehaviourPun
     private PlayerData playerData;
 
     public float maxDistance;
-    
+
 
     void Start()
     {
         playerData = player.GetComponent<PlayerData>();
         maxDistance = playerData.playerRayLength;
-        
+
 
         characterController = player.GetComponent<CharacterController>();
         if (characterController == null)
@@ -73,11 +73,20 @@ public class SitOnSofa : MonoBehaviourPun
             return;
         }
 
-        if(characterMovementScript != null){
-            characterMovementScript.enabled = false; // Disable movement script while sitting
+        if (characterMovementScript != null)
+        {
+            characterMovementScript.enabled = false;
         }
 
-        player.position = hitPoint + Vector3.up * sitHeightOffset;
+        if (seat != null && seat.sitPoint != null)
+        {
+            player.position = seat.sitPoint.position + Vector3.up * sitHeightOffset;
+            player.rotation = seat.sitPoint.rotation;
+        }
+        else
+        {
+            player.position = hitPoint + Vector3.up * sitHeightOffset;
+        }
 
         isSitting = true;
         currentSofa = hitTransform;
@@ -99,7 +108,8 @@ public class SitOnSofa : MonoBehaviourPun
                 seat.IsOccupied = false;
         }
 
-        if(characterMovementScript != null){
+        if (characterMovementScript != null)
+        {
             characterMovementScript.enabled = true; // Enable movement script while sitting
         }
 
