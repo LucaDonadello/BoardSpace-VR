@@ -3,9 +3,8 @@ using System.IO;
 using UnityEngine.Android;
 using TMPro;
 using UnityEngine.UI;
-using Photon.Pun;
 
-public class LoadDoc : MonoBehaviourPun
+public class LoadDoc : MonoBehaviour
 {
     public Transform player;
     public Transform cameraTransform;
@@ -25,20 +24,11 @@ public class LoadDoc : MonoBehaviourPun
         {
             Permission.RequestUserPermission(Permission.ExternalStorageRead);
         }
-        /*RawImage[]rawImages = FindObjectsByType<RawImage>(FindObjectsSortMode.None);
-        foreach (var ind_image in rawImages){
-            Debug.Log(ind_image.gameObject.name);
-            if(ind_image.gameObject.name.Contains("Load")){
-                image = ind_image;
-            }
-        }*/
-        image = GameObject.Find("DocImage").GetComponent<RawImage>();
+        image = FindFirstObjectByType<RawImage>();
     }
 
     void Update()
     {
-        if (!photonView.IsMine) return;
-
         float maxDistance = playerData.playerRayLength;
         Vector3 startPosition = cameraTransform.position;
         Vector3 direction = cameraTransform.forward;
@@ -66,31 +56,24 @@ public class LoadDoc : MonoBehaviourPun
                     if( path == null )
                         Debug.Log( "Operation cancelled" );
                     else{
-                        // run pun method LoadDoc
-                        photonView.RPC("DocumentLoad", RpcTarget.AllBuffered, path);
+                        Debug.Log( "Picked file: " + path );
+
+                        /*string jpegOutput = Path.Combine("./", "pdf-%d.jpg");
+
+                        convertPDF.Convert(path, jpegOutput, 1, 2, "jpeg", 200, 200);*/
+
+                        Texture2D texture = null;
+                        byte[] fileData;
+
+                        if(File.Exists(path)){
+                            fileData = File.ReadAllBytes(path);
+                            texture = new Texture2D(2,2);
+                            texture.LoadImage(fileData);
+                            image.texture = texture;
+                        }
                     }
                 }, new string[] { fileExtension } );
             }
-        }
-    }
-
-    [PunRPC]
-    void DocumentLoad(string path)
-    {
-        Debug.Log( "Picked file: " + path );
-
-        /*string jpegOutput = Path.Combine("./", "pdf-%d.jpg");
-
-        convertPDF.Convert(path, jpegOutput, 1, 2, "jpeg", 200, 200);*/
-
-        Texture2D texture = null;
-        byte[] fileData;
-
-        if(File.Exists(path)){
-            fileData = File.ReadAllBytes(path);
-            texture = new Texture2D(2,2);
-            texture.LoadImage(fileData);
-            image.texture = texture;
         }
     }
 }
