@@ -1,0 +1,12 @@
+Luca Donadello
+	Tasks:
+	Contributions:
+Andrew Gerungan
+	Tasks:
+	Contributions:
+Jonathan Lee
+	Tasks: Primary game room designer, raycast fix, general interaction fixes
+	Contributions: Added table pong, chess, monopoly, decorated game room, easy controls swapping, 	raycast/grab fixes earlier on. 
+Thanh Nguyen
+	Tasks:
+	Contributions:

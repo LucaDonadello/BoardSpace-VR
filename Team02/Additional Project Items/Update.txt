@@ -1,0 +1,29 @@
+
+ ● (Low) The environment was quite well set, so I can see the final result would be nice. 
+
+ ● (Medium) Rotation-locking objects that users have picked up to place may help users make better object rearrangements. -completed ✅, involved manually rotating object in a script every time it was picked up
+
+ ● (Low) Being able to see my box avatar is a little off-putting and it having a collider may be unnecessary. -completed ✅, changed to a better avatar with custom selection menu
+
+ ● (High) The raycast should be placed on camera. -completed ✅, required reorganizing hierarchy and redesigning scripts
+
+ ● (High) Dropping the object at a certain location is not available. -completed when sitting down ✅, added joystick controls to adjust position relative to camera
+
+ ● (Medium) The number of interactions were too low (TV, travel). -completed ✅, added light interaction, jukebox, and lots of game objects
+
+ ● (Medium) TV is only used for music – hard to know if it’s on or off. -completed✅, now we get to see an actual video on the tv
+ ● (High) Could not sometimes sit on the couch. * -✅ must be very close to couch
+
+ ● (High) The raycast is a bit weird for teleporting. ✅ fixed, made it a lot more accurate by repositioning and rewriting scripts
+
+ ● (Medium) Menu only works for quit and resume, needs fixing. ✅fixed, added functionality throughout menu
+
+ ● (Medium) Tried to turn on lamp by shade, but only base worked. * ✅fixed, enabled interaction in all parts of lamp
+
+ ● (Medium) Raycast disappears sometimes – likely due to collision with couch or player. ✅fixed, rewrote and made adjustments like mentioned above
+
+ ● (High) Grab is choppy and object is too far from player. ✅fixed, rewrote script
+
+ ● (Low) Would like to throw and break objects for fun. ✅added throwing, involved writing other method within grab script to give object velocity
+ ● (Low) Character customization would be nice (color change, etc.). ✅added, can cycle between 4 different characters
+
