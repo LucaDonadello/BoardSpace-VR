@@ -6,13 +6,12 @@ public class SitOnSofa : MonoBehaviourPun
     public Transform player;
     public Transform cameraTransform;
     public string sofaKeyword = "Sofa";
-    public string chairKeyword = "Chair";
     public float sitHeightOffset = 0.3f;
 
     public LayerMask interactableLayers;
 
     private CharacterController characterController;
-    public bool IsSitting { get; private set; } = false;
+    private bool isSitting = false;
     private Transform currentSofa = null;
     public CharacterMovement characterMovementScript;
 
@@ -48,16 +47,16 @@ public class SitOnSofa : MonoBehaviourPun
         }
 
         // Sit or stand
-        // Press N on the keyboard or B on the controller to sit or stand up
-        if (ButtonMapping.Instance.GetActionDown("B") && hitInfo.collider != null)
+        // Press Y on the keyboard or X on the controller to sit or stand up
+        if ((Input.GetKeyDown(KeyCode.Y) || Input.GetButtonDown("js2")) && hitInfo.collider != null)
         {
             Transform hitTransform = hitInfo.transform;
 
-            if (!IsSitting && (hitTransform.name.Contains(sofaKeyword) || hitTransform.name.Contains(chairKeyword)))
+            if (!isSitting && hitTransform.name.Contains(sofaKeyword))
             {
                 TrySit(hitTransform, hitInfo.point);
             }
-            else if (IsSitting)
+            else if (isSitting)
             {
                 StandUp();
             }
@@ -88,7 +87,7 @@ public class SitOnSofa : MonoBehaviourPun
             player.position = hitPoint + Vector3.up * sitHeightOffset;
         }
 
-        IsSitting = true;
+        isSitting = true;
         currentSofa = hitTransform;
 
         if (seat != null)
@@ -99,7 +98,7 @@ public class SitOnSofa : MonoBehaviourPun
 
     void StandUp()
     {
-        IsSitting = false;
+        isSitting = false;
 
         if (currentSofa != null)
         {

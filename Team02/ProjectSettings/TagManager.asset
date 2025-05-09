@@ -15,10 +15,6 @@ TagManager:
   - DoorToLiving2
   - Interactable
   - Grabbable
-  - Bullet
-  - Throwable
-  - PingPongTable
-  - Cup
   layers:
   - Default
   - TransparentFX

@@ -9,14 +9,11 @@ public class LightOnOff : MonoBehaviour
     public LayerMask hitLayers;  // Layers to interact with
 
     private PlayerData playerData;  // Reference to PlayerData script
-    public AudioClip lightSound;
-    private AudioSource audioSource;
 
     void Start()
     {
         playerData = player.GetComponent<PlayerData>();  // Get PlayerData component from the player
         maxDistance = playerData.playerRayLength;  // Set max distance from PlayerData
-        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -35,7 +32,10 @@ public class LightOnOff : MonoBehaviour
 
             // Check for input and correct tag/name
             // Press Y on the keyboard or X on the controller to interact with the lamp
-            if (ButtonMapping.Instance.GetActionDown("X") && hitInfo.collider != null && hitInfo.collider.CompareTag(InteractableTag) && hitInfo.collider.gameObject.name.Contains("Lamp"))
+            if ((Input.GetKeyDown(KeyCode.Y) || Input.GetButtonDown("js2")) &&
+                hitInfo.collider != null &&
+                hitInfo.collider.CompareTag(InteractableTag) &&
+                hitInfo.collider.gameObject.name.Contains("Lamp"))
             {
                 // Get the Light component from the child
                 Light childLight = hitInfo.collider.GetComponentInChildren<Light>();
@@ -44,8 +44,6 @@ public class LightOnOff : MonoBehaviour
                 {
                     childLight.enabled = !childLight.enabled;  // Toggle light on/off
                 }
-                if (lightSound != null && audioSource != null)
-                    audioSource.PlayOneShot(lightSound);
             }
         }
     }
