@@ -67,7 +67,7 @@ public class Teleport : MonoBehaviourPun
         }
 
         // Press X on the controller or Y on the keyboard to teleport
-        if (ButtonMapping.Instance.GetActionDown("X") && hitInfo.collider != null && hitInfo.collider.CompareTag(teleportTag))
+        if ((Input.GetButtonDown("js2") || Input.GetKeyDown(KeyCode.Y)) && hitInfo.collider != null && hitInfo.collider.CompareTag(teleportTag))
         {
             TeleportPlayer(hitInfo.point);
         }
