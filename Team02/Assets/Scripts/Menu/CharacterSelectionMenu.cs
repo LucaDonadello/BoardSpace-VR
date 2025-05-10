@@ -257,7 +257,7 @@ public class CharacterSelectionMenu : MonoBehaviourPun
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.B) || Input.GetButtonDown("js10")) // Press A on the controller
+        if (ButtonMapping.Instance.GetActionDown("A")) // Press A on the controller or B on keyboard
         {
             switch (selectedOption)
             {

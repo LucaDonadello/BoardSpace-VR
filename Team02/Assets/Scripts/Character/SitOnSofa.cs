@@ -6,25 +6,26 @@ public class SitOnSofa : MonoBehaviourPun
     public Transform player;
     public Transform cameraTransform;
     public string sofaKeyword = "Sofa";
+    public string chairKeyword = "Chair";
     public float sitHeightOffset = 0.3f;
 
     public LayerMask interactableLayers;
 
     private CharacterController characterController;
-    private bool isSitting = false;
+    public bool IsSitting { get; private set; } = false;
     private Transform currentSofa = null;
     public CharacterMovement characterMovementScript;
 
     private PlayerData playerData;
 
     public float maxDistance;
-    
+
 
     void Start()
     {
         playerData = player.GetComponent<PlayerData>();
         maxDistance = playerData.playerRayLength;
-        
+
 
         characterController = player.GetComponent<CharacterController>();
         if (characterController == null)
@@ -48,16 +49,16 @@ public class SitOnSofa : MonoBehaviourPun
         }
 
         // Sit or stand
-        // Press Y on the keyboard or X on the controller to sit or stand up
-        if ((Input.GetKeyDown(KeyCode.Y) || Input.GetButtonDown("js2")) && hitInfo.collider != null)
+        // Press N on the keyboard or B on the controller to sit or stand up
+        if (ButtonMapping.Instance.GetActionDown("B") && hitInfo.collider != null)
         {
             Transform hitTransform = hitInfo.transform;
 
-            if (!isSitting && hitTransform.name.Contains(sofaKeyword))
+            if (!IsSitting && (hitTransform.name.Contains(sofaKeyword) || hitTransform.name.Contains(chairKeyword)))
             {
                 TrySit(hitTransform, hitInfo.point);
             }
-            else if (isSitting)
+            else if (IsSitting)
             {
                 StandUp();
             }
@@ -79,7 +80,7 @@ public class SitOnSofa : MonoBehaviourPun
 
         player.position = hitPoint + Vector3.up * sitHeightOffset;
 
-        isSitting = true;
+        IsSitting = true;
         currentSofa = hitTransform;
 
         if (seat != null)
@@ -90,7 +91,7 @@ public class SitOnSofa : MonoBehaviourPun
 
     void StandUp()
     {
-        isSitting = false;
+        IsSitting = false;
 
         if (currentSofa != null)
         {

@@ -10,7 +10,7 @@ public class OutlineEffect : MonoBehaviourPun
     public float maxDistance = 10f;
 
     [Header("Tags to Outline (partial match allowed)")]
-    public List<string> targetTags = new List<string> { "Door", "Grabbable", "Interactable",};
+    public List<string> targetTags = new List<string> { "Door", "Grabbable", "Interactable", "Throwable",};
 
     private Outline lastOutlinedObject = null;
 
