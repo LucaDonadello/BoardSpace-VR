@@ -74,11 +74,20 @@ public class SitOnSofa : MonoBehaviourPun
             return;
         }
 
-        if(characterMovementScript != null){
-            characterMovementScript.enabled = false; // Disable movement script while sitting
+        if (characterMovementScript != null)
+        {
+            characterMovementScript.enabled = false;
         }
 
-        player.position = hitPoint + Vector3.up * sitHeightOffset;
+        if (seat != null && seat.sitPoint != null)
+        {
+            player.position = seat.sitPoint.position + Vector3.up * sitHeightOffset;
+            player.rotation = seat.sitPoint.rotation;
+        }
+        else
+        {
+            player.position = hitPoint + Vector3.up * sitHeightOffset;
+        }
 
         IsSitting = true;
         currentSofa = hitTransform;
